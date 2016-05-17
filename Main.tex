@@ -1,0 +1,127 @@
+%=====================================================================
+%	UCT EEE3017W DIGITAL ELECTRONICS NOTES 
+%---------------------------------------------------------------------
+%	Created by:		R.A. Verrinder
+%	Date created:	December 2014
+%	Date modified:	3 Jan 2015
+%---------------------------------------------------------------------
+%	Compile with:		arara 
+%=====================================================================
+%	Document properties:
+%---------------------------------------------------------------------
+%	Paper size:			A4
+%	Margins:			1 inch margins (top,bottom,left,right)
+%	Printing:			Double sided
+%	Base font size:		11pt
+%	Line spacing:		
+%	Paragraph spacing:	10pt
+%	Paragraph indent:	0pt
+ %=====================================================================
+
+\documentclass[a4paper,11pt,twoside]{book}
+
+%---------------------------------------------------------------------
+%	PACKAGES
+%---------------------------------------------------------------------
+\usepackage[margin = 1in]{geometry}		
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{hyperref}
+\usepackage{hyphenat}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{fancyref}
+\usepackage{fancyvrb}
+
+\usepackage{cite}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx}					% Can include graphics
+\usepackage{float}						% Can place figures at exact places in text
+\usepackage{wrapfig}					% Can wrap text around figures
+\usepackage{import}
+
+\usepackage{array}						% Can set column widths in tables
+\usepackage{mdframed}					% Can draw boxes around text etc.
+\usepackage{subcaption}					% Can place figures side by side
+\usepackage{tikz}
+\usetikzlibrary{positioning}		
+\usetikzlibrary{shapes.geometric, arrows} % For block diagrams
+\usetikzlibrary{circuits.logic.US} 
+\usetikzlibrary{calc}
+\usepackage[siunitx]{circuitikz}		% Can draw circuits
+\usepackage{tikz-timing}				% Can draw timing diagrams
+%\usepackage{/Users/robynverrinder/Dropbox/askmaps}					% Can draw Karnaugh maps
+\usepackage{enumerate}
+
+\usepackage{xspace}						% For box spaces
+\usepackage{caption}					% Captions and subcaptions
+
+\usepackage{fix-cm}						% Can set font size
+\usepackage{color}						% Can change font color
+
+\usepackage[scaled=0.9]{helvet}			% Helvetica font scaled
+\usepackage{courier}					% Courier font
+\usepackage{mathptmx}					% Times New Roman font
+\usepackage{cmbright}
+\normalfont 							% in case the EC fonts aren't available
+\usepackage[T1]{fontenc}				% Used to switch to type 1 font encoding
+
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{datetime}					% Can use dates and times
+\usepackage{gensymb}				
+
+\usepackage{multirow}
+\usepackage{hhline}
+
+%---------------------------------------------------------------------
+% 	PAGE FORMATTING
+%---------------------------------------------------------------------
+\parskip	= 10pt										% Paragraph spacing
+\parindent 	= 0pt										% No para. indent
+
+\captionsetup{width=0.8\textwidth,font=small,labelfont=bf}		% Caption margins 80% of text
+
+%---------------------------------------------------------------------
+%	DOCUMENT PROPERTIES
+%---------------------------------------------------------------------
+%\newcommand{\auth}{R.A. Verrinder}						% Author
+%\newcommand{\course}{EEE3017W}							% Course code
+%\newcommand{\titl}{Digital Electronics}					% Course title
+%\newcommand{\stitl}{Course Textbook}					% Document title
+%\newcommand{\dept}{Department of Electrical Engineering}% Department 
+%\newcommand{\uni}{University of Cape Town}				% University
+%\newcommand{\city}{Rondebosch, Cape Town}				% City
+%\newcommand{\country}{South Africa}						% Country
+%\newcommand{\aemail}{robyn.verrinder@uct.ac.za}			% Author email address
+
+%---------------------------------------------------------------------
+%	 FORMATTING FUNCTIONS
+%---------------------------------------------------------------------
+\mdfdefinestyle{examplebox}
+{
+	linecolor=black,
+	linewidth=1pt,
+	leftmargin=40,
+	rightmargin=40,
+	frametitlerule=true,
+	everyline = true,
+	frametitlebackgroundcolor=gray!10,
+	frametitleaboveskip=3pt,
+	frametitlebelowskip=9pt,
+	innertopmargin=\topskip,
+}
+
+%---------------------------------------------------------------------
+%	STANDARD IMAGES
+%---------------------------------------------------------------------
+%=====================================================================
+%	Start of the document
+%--------------------------------------------------------------------
+\begin{document}
+\graphicspath{{figs/}}
+\include{Eclipse}
+%---------------------------------------------------------------------
+\end{document}
+%---------------------------------------------------------------------
