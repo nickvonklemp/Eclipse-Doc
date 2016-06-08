@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.10)  17 MAY 2016 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.10)  6 JUN 2016 17:42
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -247,7 +247,28 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count105
 \FV@StepNumber=\count106
 \FV@OutFile=\write3
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip48
+\RaggedLeftLeftskip=\skip49
+\RaggedRightLeftskip=\skip50
+\CenteringRightskip=\skip51
+\RaggedLeftRightskip=\skip52
+\RaggedRightRightskip=\skip53
+\CenteringParfillskip=\skip54
+\RaggedLeftParfillskip=\skip55
+\RaggedRightParfillskip=\skip56
+\JustifyingParfillskip=\skip57
+\CenteringParindent=\skip58
+\RaggedLeftParindent=\skip59
+\RaggedRightParindent=\skip60
+\JustifyingParindent=\skip61
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -297,8 +318,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen124
 \extrarowheight=\dimen125
 \NC@list=\toks21
-\extratabsurround=\skip48
-\backup@length=\skip49
+\extratabsurround=\skip62
+\backup@length=\skip63
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mdframed\mdframed.sty"
 Package: mdframed 2013/07/01 1.9b: mdframed
@@ -342,12 +363,12 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \l_tmpb_dim=\dimen129
 \g_tmpa_dim=\dimen130
 \g_tmpb_dim=\dimen131
-\c_zero_skip=\skip50
-\c_max_skip=\skip51
-\l_tmpa_skip=\skip52
-\l_tmpb_skip=\skip53
-\g_tmpa_skip=\skip54
-\g_tmpb_skip=\skip55
+\c_zero_skip=\skip64
+\c_max_skip=\skip65
+\l_tmpa_skip=\skip66
+\l_tmpb_skip=\skip67
+\g_tmpa_skip=\skip68
+\g_tmpb_skip=\skip69
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
@@ -444,47 +465,47 @@ Package zref Info: New property: abspage on input line 62.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\needspace\needspace.sty"
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip56
+\mdf@templength=\skip70
 \c@mdf@globalstyle@cnt=\count139
-\mdf@skipabove@length=\skip57
-\mdf@skipbelow@length=\skip58
-\mdf@leftmargin@length=\skip59
-\mdf@rightmargin@length=\skip60
-\mdf@innerleftmargin@length=\skip61
-\mdf@innerrightmargin@length=\skip62
-\mdf@innertopmargin@length=\skip63
-\mdf@innerbottommargin@length=\skip64
-\mdf@splittopskip@length=\skip65
-\mdf@splitbottomskip@length=\skip66
-\mdf@outermargin@length=\skip67
-\mdf@innermargin@length=\skip68
-\mdf@linewidth@length=\skip69
-\mdf@innerlinewidth@length=\skip70
-\mdf@middlelinewidth@length=\skip71
-\mdf@outerlinewidth@length=\skip72
-\mdf@roundcorner@length=\skip73
-\mdf@footenotedistance@length=\skip74
-\mdf@userdefinedwidth@length=\skip75
-\mdf@needspace@length=\skip76
-\mdf@frametitleaboveskip@length=\skip77
-\mdf@frametitlebelowskip@length=\skip78
-\mdf@frametitlerulewidth@length=\skip79
-\mdf@frametitleleftmargin@length=\skip80
-\mdf@frametitlerightmargin@length=\skip81
-\mdf@shadowsize@length=\skip82
-\mdf@extratopheight@length=\skip83
-\mdf@subtitleabovelinewidth@length=\skip84
-\mdf@subtitlebelowlinewidth@length=\skip85
-\mdf@subtitleaboveskip@length=\skip86
-\mdf@subtitlebelowskip@length=\skip87
-\mdf@subtitleinneraboveskip@length=\skip88
-\mdf@subtitleinnerbelowskip@length=\skip89
-\mdf@subsubtitleabovelinewidth@length=\skip90
-\mdf@subsubtitlebelowlinewidth@length=\skip91
-\mdf@subsubtitleaboveskip@length=\skip92
-\mdf@subsubtitlebelowskip@length=\skip93
-\mdf@subsubtitleinneraboveskip@length=\skip94
-\mdf@subsubtitleinnerbelowskip@length=\skip95
+\mdf@skipabove@length=\skip71
+\mdf@skipbelow@length=\skip72
+\mdf@leftmargin@length=\skip73
+\mdf@rightmargin@length=\skip74
+\mdf@innerleftmargin@length=\skip75
+\mdf@innerrightmargin@length=\skip76
+\mdf@innertopmargin@length=\skip77
+\mdf@innerbottommargin@length=\skip78
+\mdf@splittopskip@length=\skip79
+\mdf@splitbottomskip@length=\skip80
+\mdf@outermargin@length=\skip81
+\mdf@innermargin@length=\skip82
+\mdf@linewidth@length=\skip83
+\mdf@innerlinewidth@length=\skip84
+\mdf@middlelinewidth@length=\skip85
+\mdf@outerlinewidth@length=\skip86
+\mdf@roundcorner@length=\skip87
+\mdf@footenotedistance@length=\skip88
+\mdf@userdefinedwidth@length=\skip89
+\mdf@needspace@length=\skip90
+\mdf@frametitleaboveskip@length=\skip91
+\mdf@frametitlebelowskip@length=\skip92
+\mdf@frametitlerulewidth@length=\skip93
+\mdf@frametitleleftmargin@length=\skip94
+\mdf@frametitlerightmargin@length=\skip95
+\mdf@shadowsize@length=\skip96
+\mdf@extratopheight@length=\skip97
+\mdf@subtitleabovelinewidth@length=\skip98
+\mdf@subtitlebelowlinewidth@length=\skip99
+\mdf@subtitleaboveskip@length=\skip100
+\mdf@subtitlebelowskip@length=\skip101
+\mdf@subtitleinneraboveskip@length=\skip102
+\mdf@subtitleinnerbelowskip@length=\skip103
+\mdf@subsubtitleabovelinewidth@length=\skip104
+\mdf@subsubtitlebelowlinewidth@length=\skip105
+\mdf@subsubtitleaboveskip@length=\skip106
+\mdf@subsubtitlebelowskip@length=\skip107
+\mdf@subsubtitleinneraboveskip@length=\skip108
+\mdf@subsubtitleinnerbelowskip@length=\skip109
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mdframed\md-frame-0.mdf"
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
@@ -494,33 +515,33 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@splitbox@one=\box49
 \mdf@splitbox@two=\box50
 \mdf@splitbox@save=\box51
-\mdfsplitboxwidth=\skip96
-\mdfsplitboxtotalwidth=\skip97
-\mdfsplitboxheight=\skip98
-\mdfsplitboxdepth=\skip99
-\mdfsplitboxtotalheight=\skip100
-\mdfframetitleboxwidth=\skip101
-\mdfframetitleboxtotalwidth=\skip102
-\mdfframetitleboxheight=\skip103
-\mdfframetitleboxdepth=\skip104
-\mdfframetitleboxtotalheight=\skip105
-\mdffootnoteboxwidth=\skip106
-\mdffootnoteboxtotalwidth=\skip107
-\mdffootnoteboxheight=\skip108
-\mdffootnoteboxdepth=\skip109
-\mdffootnoteboxtotalheight=\skip110
-\mdftotallinewidth=\skip111
-\mdfboundingboxwidth=\skip112
-\mdfboundingboxtotalwidth=\skip113
-\mdfboundingboxheight=\skip114
-\mdfboundingboxdepth=\skip115
-\mdfboundingboxtotalheight=\skip116
-\mdf@freevspace@length=\skip117
-\mdf@horizontalwidthofbox@length=\skip118
-\mdf@verticalmarginwhole@length=\skip119
-\mdf@horizontalspaceofbox=\skip120
-\mdfsubtitleheight=\skip121
-\mdfsubsubtitleheight=\skip122
+\mdfsplitboxwidth=\skip110
+\mdfsplitboxtotalwidth=\skip111
+\mdfsplitboxheight=\skip112
+\mdfsplitboxdepth=\skip113
+\mdfsplitboxtotalheight=\skip114
+\mdfframetitleboxwidth=\skip115
+\mdfframetitleboxtotalwidth=\skip116
+\mdfframetitleboxheight=\skip117
+\mdfframetitleboxdepth=\skip118
+\mdfframetitleboxtotalheight=\skip119
+\mdffootnoteboxwidth=\skip120
+\mdffootnoteboxtotalwidth=\skip121
+\mdffootnoteboxheight=\skip122
+\mdffootnoteboxdepth=\skip123
+\mdffootnoteboxtotalheight=\skip124
+\mdftotallinewidth=\skip125
+\mdfboundingboxwidth=\skip126
+\mdfboundingboxtotalwidth=\skip127
+\mdfboundingboxheight=\skip128
+\mdfboundingboxdepth=\skip129
+\mdfboundingboxtotalheight=\skip130
+\mdf@freevspace@length=\skip131
+\mdf@horizontalwidthofbox@length=\skip132
+\mdf@verticalmarginwhole@length=\skip133
+\mdf@horizontalspaceofbox=\skip134
+\mdfsubtitleheight=\skip135
+\mdfsubsubtitleheight=\skip136
 \c@mdfcountframes=\count140
 
 ****** mdframed patching \endmdf@trivlist
@@ -949,8 +970,8 @@ Package: l3keys2e 2016/04/20 v6476 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_unit_prefix_base_int=\count185
 \l__siunitx_unit_prefix_gram_int=\count186
 \l__siunitx_number_product_int=\count187
-\c__siunitx_one_fill_skip=\skip123
-\l__siunitx_table_unit_align_skip=\skip124
+\c__siunitx_one_fill_skip=\skip137
+\l__siunitx_table_unit_align_skip=\skip138
 \l__siunitx_table_exponent_dim=\dimen280
 \l__siunitx_table_integer_dim=\dimen281
 \l__siunitx_table_mantissa_dim=\dimen282
@@ -964,8 +985,8 @@ Package: l3keys2e 2016/04/20 v6476 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_post_box=\box68
 \l__siunitx_table_mantissa_box=\box69
 \l__siunitx_table_result_box=\box70
-\l__siunitx_table_number_align_skip=\skip125
-\l__siunitx_table_text_align_skip=\skip126
+\l__siunitx_table_number_align_skip=\skip139
+\l__siunitx_table_text_align_skip=\skip140
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1127,8 +1148,8 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \tikztiming@numint=\count188
 \tikztiming@numfrac=\count189
-\tikztiming@xunit=\skip127
-\tikztiming@yunit=\skip128
+\tikztiming@xunit=\skip141
+\tikztiming@yunit=\skip142
 \tikztiming@debug=\count190
 \c@tikztiming@nrows=\count191
 \c@tikztimingrows=\count192
@@ -1276,7 +1297,7 @@ File: t1cmbr.fd 2005/04/13 v8.1 (WaS)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip129
+\@mathmargin=\skip143
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
@@ -1318,8 +1339,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen304
 \lineht@=\dimen305
 \@envbody=\toks39
-\multlinegap=\skip130
-\multlinetaggap=\skip131
+\multlinegap=\skip144
+\multlinetaggap=\skip145
 \mathdisplay@stack=\toks40
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -1331,9 +1352,9 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headfont=\toks43
 \thm@notefont=\toks44
 \thm@headpunct=\toks45
-\thm@preskip=\skip132
-\thm@postskip=\skip133
-\thm@headsep=\skip134
+\thm@preskip=\skip146
+\thm@postskip=\skip147
+\thm@headsep=\skip148
 \dth@everypar=\toks46
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
@@ -1507,9 +1528,12 @@ LaTeX Info: Redefining \Ref on input line 122.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 122.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 122.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- ABD: EveryShipout initializing macros
+
+ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -basic-dictionary\translator-basic-dictionary-English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1570,19 +1594,19 @@ File: ot1cmtl.fd 2005/04/13 v8.1 (WaS)
 
  (Eclipse.tex
 Chapter 1.
-<figs/driverico.png, id=22, 19.57312pt x 20.32594pt>
+<figs/driverico.png, id=34, 19.57312pt x 20.32594pt>
 File: figs/driverico.png Graphic file (type png)
  <use figs/driverico.png>
 Package pdftex.def Info: figs/driverico.png used on input line 6.
 (pdftex.def)             Requested size: 14.93843pt x 15.51251pt.
 
-<figs/driverinst.png, id=23, 337.26pt x 112.92188pt>
+<figs/driverinst.png, id=35, 337.26pt x 112.92188pt>
 File: figs/driverinst.png Graphic file (type png)
  <use figs/driverinst.png>
 Package pdftex.def Info: figs/driverinst.png used on input line 9.
 (pdftex.def)             Requested size: 271.7835pt x 91.00098pt.
 
-<figs/workspace.png, id=24, 391.4625pt x 176.91093pt>
+<figs/workspace.png, id=36, 391.4625pt x 176.91093pt>
 File: figs/workspace.png Graphic file (type png)
  <use figs/workspace.png>
 Package pdftex.def Info: figs/workspace.png used on input line 15.
@@ -1596,86 +1620,451 @@ LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10.95> not available
 
 {C:/Users/Nick/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figs/drive
 rico.png> <./figs/driverinst.png> <./figs/workspace.png>]
-
-LaTeX Warning: Citation `sec:perpectives' on page 2 undefined on input line 23.
-
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
-<figs/gccinst.png, id=41, 385.44pt x 301.8778pt>
+
+<figs/gccinst.png, id=54, 385.44pt x 301.8778pt>
 File: figs/gccinst.png Graphic file (type png)
  <use figs/gccinst.png>
 Package pdftex.def Info: figs/gccinst.png used on input line 35.
 (pdftex.def)             Requested size: 271.7835pt x 212.86072pt.
 
-[2 <./figs/gccinst.png>] <figs/gccinfo.png, id=53, 443.40656pt x 224.33812pt>
+[2 <./figs/gccinst.png>] <figs/gccinfo.png, id=68, 443.40656pt x 224.33812pt>
 File: figs/gccinfo.png Graphic file (type png)
 
 <use figs/gccinfo.png>
 Package pdftex.def Info: figs/gccinfo.png used on input line 47.
 (pdftex.def)             Requested size: 271.7835pt x 137.51355pt.
- <figs/cmdwindow.png, id=54, 168.63pt x 182.18062pt>
+ <figs/cmdwindow.png, id=69, 168.63pt x 182.18062pt>
 File: figs/cmdwindow.png Graphic file (type png)
 
 <use figs/cmdwindow.png>
 Package pdftex.def Info: figs/cmdwindow.png used on input line 53.
 (pdftex.def)             Requested size: 168.62958pt x 182.18016pt.
  [3 <./figs/gccinfo.png> <./figs/cmdwindow.png>]
-<figs/armerror.png, id=61, 468.24937pt x 118.19156pt>
+<figs/armerror.png, id=77, 468.24937pt x 118.19156pt>
 File: figs/armerror.png Graphic file (type png)
  <use figs/armerror.png>
-Package pdftex.def Info: figs/armerror.png used on input line 60.
-(pdftex.def)             Requested size: 407.66833pt x 102.90517pt.
+Package pdftex.def Info: figs/armerror.png used on input line 80.
+(pdftex.def)             Requested size: 366.899pt x 92.61465pt.
 
-<figs/envvar.png, id=62, 296.60812pt x 328.22626pt>
+<figs/envvar.png, id=78, 296.60812pt x 328.22626pt>
 File: figs/envvar.png Graphic file (type png)
  <use figs/envvar.png>
-Package pdftex.def Info: figs/envvar.png used on input line 70.
-(pdftex.def)             Requested size: 271.7835pt x 300.7648pt.
+Package pdftex.def Info: figs/envvar.png used on input line 80.
+(pdftex.def)             Requested size: 244.60349pt x 270.68983pt.
 
-[4 <./figs/armerror.png> <./figs/envvar.png>]
-Underfull \hbox (badness 2547) in paragraph at lines 111--111
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./figs/armerror.png> <./figs/envvar.png>]
+
+LaTeX Font Warning: Font shape `T1/cmbr/bx/it' undefined
+(Font)              using `T1/cmbr/bx/n' instead on input line 88.
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 113--113
 \T1/cmbr/bx/n/10.95 C:\ MinGW\bin;C:\ Pro-gram Files  (x86)\ GNU Tools  ARM Em-
 bed-
  []
 
-<figs/openocdver.png, id=72, 442.65375pt x 105.39375pt>
+<figs/openocdver.png, id=88, 442.65375pt x 105.39375pt>
 File: figs/openocdver.png Graphic file (type png)
 
 <use figs/openocdver.png>
-Package pdftex.def Info: figs/openocdver.png used on input line 120.
+Package pdftex.def Info: figs/openocdver.png used on input line 123.
 (pdftex.def)             Requested size: 317.07614pt x 75.49747pt.
  [5 <./figs/openocdver.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 [][]$\OML/cmbrm/m/it/9 http \OT1/cmbr/m/n/9 : \OML/cmbrm/m/it/9 ==www:st:com=co
 ntent=st[]om=en=products=embedded \OMS/cmbrs/m/n/9   \OML/cmbrm/m/it/9 software
 =development \OMS/cmbrs/m/n/9   \OML/cmbrm/m/it/9 tool \OMS/cmbrs/m/n/9  $
  []
 
-<figs/installstutil.png, id=82, 338.01282pt x 156.585pt>
+<figs/installstutil.png, id=98, 338.01282pt x 156.585pt>
 File: figs/installstutil.png Graphic file (type png)
 
 <use figs/installstutil.png>
-Package pdftex.def Info: figs/installstutil.png used on input line 129.
+Package pdftex.def Info: figs/installstutil.png used on input line 134.
 (pdftex.def)             Requested size: 271.7835pt x 125.9085pt.
 
-<figs/stready.png, id=83, 374.90062pt x 126.4725pt>
+<figs/stready.png, id=99, 374.90062pt x 126.4725pt>
 File: figs/stready.png Graphic file (type png)
  <use figs/stready.png>
-Package pdftex.def Info: figs/stready.png used on input line 136.
+Package pdftex.def Info: figs/stready.png used on input line 141.
 (pdftex.def)             Requested size: 271.7835pt x 91.69116pt.
 
-<figs/conico.png, id=85, 26.34843pt x 24.84282pt>
+<figs/conico.png, id=101, 26.34843pt x 24.84282pt>
 File: figs/conico.png Graphic file (type png)
  <use figs/conico.png>
-Package pdftex.def Info: figs/conico.png used on input line 142.
+Package pdftex.def Info: figs/conico.png used on input line 147.
 (pdftex.def)             Requested size: 16.45325pt x 15.51251pt.
-)
+
 [6 <./figs/installstutil.png> <./figs/stready.png> <./figs/conico.png>]
+<figs/stutil.png, id=114, 457.71pt x 333.49594pt>
+File: figs/stutil.png Graphic file (type png)
+ <use figs/stutil.png>
+Package pdftex.def Info: figs/stutil.png used on input line 162.
+(pdftex.def)             Requested size: 362.37569pt x 264.0441pt.
+
+<figs/dfumode.png, id=115, 215.30438pt x 128.73094pt>
+File: figs/dfumode.png Graphic file (type png)
+ <use figs/dfumode.png>
+Package pdftex.def Info: figs/dfumode.png used on input line 173.
+(pdftex.def)             Requested size: 181.18439pt x 108.33359pt.
+
+Overfull \hbox (17.32146pt too wide) in paragraph at lines 157--175
+\T1/cmbr/m/n/10.95 This cleans off any code you've flashed onto the mi-cro and 
+re-sets all mem-ory vec-tors to \T1/cmbr/bx/n/10.95 0xFFFFFFFFF\T1/cmbr/m/n/10.
+95 .
+ []
+
+[7 <./figs/stutil.png> <./figs/dfumode.png>]
+Overfull \hbox (7.22388pt too wide) in paragraph at lines 176--177
+\T1/cmbr/m/n/10.95 it. Re-move the USB ca-ble and re-plug it back in []$[]$[].
+ []
+
+<figs/firmup.png, id=123, 377.15906pt x 267.24844pt>
+File: figs/firmup.png Graphic file (type png)
+ <use figs/firmup.png>
+Package pdftex.def Info: figs/firmup.png used on input line 181.
+(pdftex.def)             Requested size: 317.07614pt x 224.67474pt.
+
+<figs/disconico.png, id=124, 28.60687pt x 24.84282pt>
+File: figs/disconico.png Graphic file (type png)
+ <use figs/disconico.png>
+Package pdftex.def Info: figs/disconico.png used on input line 194.
+(pdftex.def)             Requested size: 17.86353pt x 15.51251pt.
+
+[8 <./figs/firmup.png> <./figs/disconico.png>]
+<figs/stutilflash.png, id=130, 338.76563pt x 186.6975pt>
+File: figs/stutilflash.png Graphic file (type png)
+
+<use figs/stutilflash.png>
+Package pdftex.def Info: figs/stutilflash.png used on input line 211.
+(pdftex.def)             Requested size: 271.7835pt x 149.78836pt.
+ [9 <./figs/stutilflash.png>]
+<figs/eclipseworkspace.png, id=142, 356.0803pt x 164.86594pt>
+File: figs/eclipseworkspace.png Graphic file (type png)
+
+<use figs/eclipseworkspace.png>
+Package pdftex.def Info: figs/eclipseworkspace.png used on input line 237.
+(pdftex.def)             Requested size: 271.7835pt x 125.84026pt.
+
+<figs/JVM.png, id=143, 356.0803pt x 128.73094pt>
+File: figs/JVM.png Graphic file (type png)
+ <use figs/JVM.png>
+Package pdftex.def Info: figs/JVM.png used on input line 254.
+(pdftex.def)             Requested size: 244.60349pt x 88.42961pt.
+LaTeX Font Info:    Try loading font information for T1+cmtl on input line 268.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cmbright\t1cmtl.fd"
+File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
+)
+LaTeX Font Info:    Font shape `T1/cmtl/m/it' in size <10.95> not available
+(Font)              Font shape `T1/cmtl/m/sl' tried instead on input line 268.
+ [10 <./figs/eclipseworkspace.png> <./figs/JVM.png>]
+<figs/installnewsoft.png, id=151, 469.755pt x 368.1253pt>
+File: figs/installnewsoft.png Graphic file (type png)
+
+<use figs/installnewsoft.png>
+Package pdftex.def Info: figs/installnewsoft.png used on input line 276.
+(pdftex.def)             Requested size: 317.07614pt x 248.47948pt.
+
+<figs/addrepo.png, id=152, 368.1253pt x 141.52875pt>
+File: figs/addrepo.png Graphic file (type png)
+ <use figs/addrepo.png>
+Package pdftex.def Info: figs/addrepo.png used on input line 283.
+(pdftex.def)             Requested size: 317.07614pt x 121.91103pt.
+
+[11 <./figs/installnewsoft.png> <./figs/addrepo.png>]
+<figs/GCCextra.png, id=159, 471.26062pt x 131.74219pt>
+File: figs/GCCextra.png Graphic file (type png)
+ <use figs/GCCextra.png>
+Package pdftex.def Info: figs/GCCextra.png used on input line 291.
+(pdftex.def)             Requested size: 362.37569pt x 101.30508pt.
+
+<figs/inst.png, id=160, 331.2375pt x 145.29282pt>
+File: figs/inst.png Graphic file (type png)
+ <use figs/inst.png>
+Package pdftex.def Info: figs/inst.png used on input line 298.
+(pdftex.def)             Requested size: 317.07614pt x 139.0871pt.
+ [12 <./figs/GCCextra.png> <./figs/inst.png>]
+LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <8> not available
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 318.
+LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <7> not available
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 318.
+
+<figs/localrepo.png, id=175, 368.1253pt x 141.52875pt>
+File: figs/localrepo.png Graphic file (type png)
+
+<use figs/localrepo.png>
+Package pdftex.def Info: figs/localrepo.png used on input line 318.
+(pdftex.def)             Requested size: 244.60349pt x 94.042pt.
+ [13 <./figs/localrepo.png>]
+<figs/cproj.png, id=185, 329.73187pt x 426.09187pt>
+File: figs/cproj.png Graphic file (type png)
+ <use figs/cproj.png>
+Package pdftex.def Info: figs/cproj.png used on input line 328.
+(pdftex.def)             Requested size: 271.7835pt x 351.21805pt.
+
+[14 <./figs/cproj.png>]
+<figs/targetproc.png, id=191, 324.46219pt x 420.06938pt>
+File: figs/targetproc.png Graphic file (type png)
+
+<use figs/targetproc.png>
+Package pdftex.def Info: figs/targetproc.png used on input line 345.
+(pdftex.def)             Requested size: 317.07614pt x 410.53708pt.
+ [15 <./figs/targetproc.png>]
+<figs/toolsettings.png, id=197, 444.91219pt x 414.79968pt>
+File: figs/toolsettings.png Graphic file (type png)
+
+<use figs/toolsettings.png>
+Package pdftex.def Info: figs/toolsettings.png used on input line 362.
+(pdftex.def)             Requested size: 362.37569pt x 337.85306pt.
+ [16 <./figs/toolsettings.png>]
+
+LaTeX Warning: Citation `sec: Emgsysregview' on page 17 undefined on input line
+ 377.
+
+<figs/embsysregview.png, id=203, 354.57469pt x 152.06813pt>
+File: figs/embsysregview.png Graphic file (type png)
+
+<use figs/embsysregview.png>
+Package pdftex.def Info: figs/embsysregview.png used on input line 380.
+(pdftex.def)             Requested size: 271.7835pt x 116.56377pt.
+
+<figs/regviewinst.png, id=207, 469.755pt x 182.93344pt>
+File: figs/regviewinst.png Graphic file (type png)
+
+<use figs/regviewinst.png>
+Package pdftex.def Info: figs/regviewinst.png used on input line 396.
+(pdftex.def)             Requested size: 285.36658pt x 111.12865pt.
+ [17 <./figs/embsysregview.png> <./figs/regviewinst.png>] <figs/regviewtab.png,
+ id=216, 116.68594pt x 28.60687pt>
+File: figs/regviewtab.png Graphic file (type png)
+
+<use figs/regviewtab.png>
+Package pdftex.def Info: figs/regviewtab.png used on input line 419.
+(pdftex.def)             Requested size: 81.53241pt x 19.9893pt.
+
+<figs/regviewset.png, id=217, 20.32594pt x 18.82031pt>
+File: figs/regviewset.png Graphic file (type png)
+
+<use figs/regviewset.png>
+Package pdftex.def Info: figs/regviewset.png used on input line 419.
+(pdftex.def)             Requested size: 16.75421pt x 15.51251pt.
+
+<figs/regviewmicro.png, id=218, 469.755pt x 33.87656pt>
+File: figs/regviewmicro.png Graphic file (type png)
+
+<use figs/regviewmicro.png>
+Package pdftex.def Info: figs/regviewmicro.png used on input line 419.
+(pdftex.def)             Requested size: 366.899pt x 26.45874pt.
+LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 427
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cmbright\omscmbr.fd"
+File: omscmbr.fd 2005/04/13 v8.1 (WaS)
+)
+LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 427.
+
+ [18 <./figs/regviewtab.png> <./figs/regviewset.png> <./figs/regviewmicro.png>]
+
+<figs/projexplorer.png, id=225, 246.1697pt x 151.3153pt>
+File: figs/projexplorer.png Graphic file (type png)
+
+<use figs/projexplorer.png>
+Package pdftex.def Info: figs/projexplorer.png used on input line 447.
+(pdftex.def)             Requested size: 135.89174pt x 83.53305pt.
+
+<figs/buildico.png, id=226, 38.39343pt x 22.58438pt>
+File: figs/buildico.png Graphic file (type png)
+ <use figs/buildico.png>
+Package pdftex.def Info: figs/buildico.png used on input line 451.
+(pdftex.def)             Requested size: 26.37138pt x 15.51251pt.
+
+<figs/buildconsole.png, id=227, 400.49625pt x 121.20282pt>
+File: figs/buildconsole.png Graphic file (type png)
+
+<use figs/buildconsole.png>
+Package pdftex.def Info: figs/buildconsole.png used on input line 464.
+(pdftex.def)             Requested size: 244.60349pt x 74.02608pt.
+ [19 <./figs/projexplorer.png> <./figs/buildico.png> <./figs/buildconsole.png>]
+
+
+LaTeX Warning: Citation `sec:' on page 20 undefined on input line 469.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--471
+
+ []
+
+<figs/debugconfig.png, id=234, 453.19313pt x 55.70813pt>
+File: figs/debugconfig.png Graphic file (type png)
+
+<use figs/debugconfig.png>
+Package pdftex.def Info: figs/debugconfig.png used on input line 477.
+(pdftex.def)             Requested size: 362.37569pt x 44.54445pt.
+
+<figs/debugconfigmain.png, id=235, 405.01312pt x 323.70938pt>
+File: figs/debugconfigmain.png Graphic file (type png)
+
+<use figs/debugconfigmain.png>
+Package pdftex.def Info: figs/debugconfigmain.png used on input line 484.
+(pdftex.def)             Requested size: 317.07614pt x 253.43079pt.
+ [20 <./figs/debugconfig.png> <./figs/debugconfigmain.png>] <figs/debugvar.png,
+ id=242, 414.04688pt x 97.11281pt>
+File: figs/debugvar.png Graphic file (type png)
+
+<use figs/debugvar.png>
+Package pdftex.def Info: figs/debugvar.png used on input line 507.
+(pdftex.def)             Requested size: 362.37569pt x 84.99571pt.
+
+
+LaTeX Warning: Citation `Inst:OpenOCD' on page 21 undefined on input line 512.
+
+[21 <./figs/debugvar.png>]
+<figs/debugdebugger.png, id=251, 442.65375pt x 354.57469pt>
+File: figs/debugdebugger.png Graphic file (type png)
+
+<use figs/debugdebugger.png>
+Package pdftex.def Info: figs/debugdebugger.png used on input line 530.
+(pdftex.def)             Requested size: 317.07614pt x 253.99509pt.
+
+<figs/debugfavorites.png, id=252, 208.52907pt x 89.58469pt>
+File: figs/debugfavorites.png Graphic file (type png)
+
+<use figs/debugfavorites.png>
+Package pdftex.def Info: figs/debugfavorites.png used on input line 536.
+(pdftex.def)             Requested size: 181.18439pt x 77.84097pt.
+
+<figs/resume.png, id=253, 30.1125pt x 26.34843pt>
+File: figs/resume.png Graphic file (type png)
+ <use figs/resume.png>
+Package pdftex.def Info: figs/resume.png used on input line 543.
+(pdftex.def)             Requested size: 17.72899pt x 15.51251pt.
+
+
+LaTeX Warning: Citation `perspectives' on page 22 undefined on input line 543.
+
+<figs/perspectiveico.png, id=254, 126.4725pt x 23.33719pt>
+File: figs/perspectiveico.png Graphic file (type png)
+
+<use figs/perspectiveico.png>
+Package pdftex.def Info: figs/perspectiveico.png used on input line 545.
+(pdftex.def)             Requested size: 84.0684pt x 15.51251pt.
+ [22 <./figs/debugdebugger.png> <./figs/debugfavorites.png> <./figs/resume.png>
+ <./figs/perspectiveico.png>]
+<figs/CPPIco.png, id=263, 82.80937pt x 22.58438pt>
+File: figs/CPPIco.png Graphic file (type png)
+ <use figs/CPPIco.png>
+Package pdftex.def Info: figs/CPPIco.png used on input line 551.
+(pdftex.def)             Requested size: 56.87949pt x 15.51251pt.
+
+<figs/projectexplorerview.png, id=264, 302.63063pt x 228.855pt>
+File: figs/projectexplorerview.png Graphic file (type png)
+
+<use figs/projectexplorerview.png>
+Package pdftex.def Info: figs/projectexplorerview.png used on input line 558.
+(pdftex.def)             Requested size: 181.18439pt x 137.01723pt.
+
+<figs/files.png, id=265, 199.49532pt x 37.64063pt>
+File: figs/files.png Graphic file (type png)
+ <use figs/files.png>
+Package pdftex.def Info: figs/files.png used on input line 575.
+(pdftex.def)             Requested size: 181.18439pt x 34.18695pt.
+
+<figs/console.png, id=266, 313.17pt x 93.34875pt>
+File: figs/console.png Graphic file (type png)
+ <use figs/console.png>
+Package pdftex.def Info: figs/console.png used on input line 581.
+(pdftex.def)             Requested size: 271.7835pt x 81.01476pt.
+
+[23 <./figs/CPPIco.png> <./figs/projectexplorerview.png> <./figs/files.png> <./
+figs/console.png>] <figs/displayconsole.png, id=276, 37.64063pt x 23.33719pt>
+File: figs/displayconsole.png Graphic file (type png)
+
+<use figs/displayconsole.png>
+Package pdftex.def Info: figs/displayconsole.png used on input line 586.
+(pdftex.def)             Requested size: 25.02034pt x 15.51251pt.
+
+<figs/displayselectedconsole.png, id=277, 395.22656pt x 75.28125pt>
+File: figs/displayselectedconsole.png Graphic file (type png)
+
+<use figs/displayselectedconsole.png>
+Package pdftex.def Info: figs/displayselectedconsole.png used on input line 589
+.
+(pdftex.def)             Requested size: 317.07614pt x 60.39622pt.
+
+<figs/newperspectiveico.png, id=278, 29.35968pt x 27.10126pt>
+File: figs/newperspectiveico.png Graphic file (type png)
+
+<use figs/newperspectiveico.png>
+Package pdftex.def Info: figs/newperspectiveico.png used on input line 593.
+(pdftex.def)             Requested size: 16.80551pt x 15.51251pt.
+
+<figs/debugperspective.png, id=279, 131.74219pt x 24.84282pt>
+File: figs/debugperspective.png Graphic file (type png)
+
+<use figs/debugperspective.png>
+Package pdftex.def Info: figs/debugperspective.png used on input line 595.
+(pdftex.def)             Requested size: 82.26628pt x 15.51251pt.
+
+<figs/debugico.png, id=280, 34.62938pt x 21.07875pt>
+File: figs/debugico.png Graphic file (type png)
+ <use figs/debugico.png>
+Package pdftex.def Info: figs/debugico.png used on input line 598.
+(pdftex.def)             Requested size: 25.48529pt x 15.51251pt.
+
+<figs/debugdropdown.png, id=281, 182.93344pt x 109.1578pt>
+File: figs/debugdropdown.png Graphic file (type png)
+
+<use figs/debugdropdown.png>
+Package pdftex.def Info: figs/debugdropdown.png used on input line 601.
+(pdftex.def)             Requested size: 181.18439pt x 108.11984pt.
+
+<figs/debugtab.png, id=282, 542.025pt x 101.62968pt>
+File: figs/debugtab.png Graphic file (type png)
+ <use figs/debugtab.png>
+Package pdftex.def Info: figs/debugtab.png used on input line 607.
+(pdftex.def)             Requested size: 362.37569pt x 67.9473pt.
+
+[24 <./figs/displayconsole.png> <./figs/displayselectedconsole.png> <./figs/new
+perspectiveico.png> <./figs/debugperspective.png> <./figs/debugico.png> <./figs
+/debugdropdown.png> <./figs/debugtab.png>]
+<figs/breakpointico.png, id=291, 22.58438pt x 22.58438pt>
+File: figs/breakpointico.png Graphic file (type png)
+
+<use figs/breakpointico.png>
+Package pdftex.def Info: figs/breakpointico.png used on input line 610.
+(pdftex.def)             Requested size: 15.51257pt x 15.51251pt.
+
+<figs/resumeico.png, id=292, 32.37094pt x 30.86531pt>
+File: figs/resumeico.png Graphic file (type png)
+ <use figs/resumeico.png>
+Package pdftex.def Info: figs/resumeico.png used on input line 612.
+(pdftex.def)             Requested size: 16.2694pt x 15.51251pt.
+
+<figs/pauseico.png, id=293, 24.09pt x 21.83156pt>
+File: figs/pauseico.png Graphic file (type png)
+ <use figs/pauseico.png>
+Package pdftex.def Info: figs/pauseico.png used on input line 612.
+(pdftex.def)             Requested size: 17.11723pt x 15.51251pt.
+
+<figs/terminateico.png, id=294, 32.37094pt x 29.35968pt>
+File: figs/terminateico.png Graphic file (type png)
+
+<use figs/terminateico.png>
+Package pdftex.def Info: figs/terminateico.png used on input line 612.
+(pdftex.def)             Requested size: 17.10365pt x 15.51251pt.
+) [25 <./figs/breakpointico.png> <./figs/resumeico.png> <./figs/pauseico.png> <
+./figs/terminateico.png>]
 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
@@ -1684,23 +2073,57 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: D8DB8D8065E0A533B937C3CA212E77D4;287.
+(rerunfilecheck)             Checksum: 77A73F39CFAC690CB568CD6B42D9AA27;502.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 197 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 39351 strings out of 493634
- 849915 string characters out of 3143747
- 1028794 words of memory out of 3000000
- 42081 multiletter control sequences out of 15000+200000
- 34504 words of font info for 91 fonts, out of 3000000 for 9000
+ 39742 strings out of 493634
+ 857786 string characters out of 3143747
+ 1030909 words of memory out of 3000000
+ 42359 multiletter control sequences out of 15000+200000
+ 36424 words of font info for 94 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 55i,8n,98p,10455b,720s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
-st, replaced by a fixed one
+ 55i,15n,98p,10455b,820s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -1708,27 +2131,32 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+ <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657
+\cmbrmi10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm
+bright\dpi657\cmbr10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\public\cmbright\dpi525\ebmo8.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\public\cmbright\dpi600\ebmo8.pk> <C:\Users\Nick\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\public\cmbright\dpi657\ebto10.pk> <C:\Users\Nick\AppData\
+Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\cmbrsy9.pk> <C:\Users\N
+ick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi525\cmbrmi8.pk>
  <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600
-\cmbrsy9.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmb
-right\dpi525\cmbrmi8.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\public\cmbright\dpi600\cmbr9.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\public\cmbright\dpi600\cmbrmi9.pk> <C:\Users\Nick\AppData\Local\MiK
-TeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\ebmr9.pk> <C:\Users\Nick\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi525\ebmr8.pk> <C:\Users\Ni
-ck\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\ebmr8.pk> <C
-:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\eb
-bx10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbrigh
-t\dpi657\ebmo10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pub
-lic\cmbright\dpi657\cmbrsy10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\public\cmbright\dpi657\ebbx10.pk> <C:\Users\Nick\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\public\cmbright\dpi657\ebmr10.pk> <C:\Users\Nick\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\ebbx10.pk> <C:\Users\Nic
-k\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi1493\ebbx10.pk> <
-C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi1244\
-ebbx10.pk>
-Output written on Main.pdf (6 pages, 588027 bytes).
+\cmbr9.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbri
+ght\dpi600\cmbrmi9.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+public\cmbright\dpi600\ebmr9.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\public\cmbright\dpi525\ebmr8.pk> <C:\Users\Nick\AppData\Local\MiKTeX\
+2.9\fonts\pk\ljfour\public\cmbright\dpi600\ebmr8.pk> <C:\Users\Nick\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\ebbx10.pk> <C:\Users\Nick\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657\ebmo10.pk> <C:\
+Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657\cmbr
+sy10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbrigh
+t\dpi657\ebmr10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pub
+lic\cmbright\dpi657\ebbx10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\public\cmbright\dpi864\ebbx10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\public\cmbright\dpi1493\ebbx10.pk> <C:\Users\Nick\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi1244\ebbx10.pk>
+Output written on Main.pdf (25 pages, 2009613 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 811 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 354 words of extra memory for PDF output out of 10000 (max. 10000000)
 
