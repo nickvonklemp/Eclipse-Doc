@@ -1,45 +1,83 @@
+%Bold face command for programs
+\newcommand{\prg}[1]{\textbf{#1}}
+%Bold face & aquamarine color for locations
+\newcommand{\loc}[1]{\textbf{\color{Aquamarine} #1}}
+%Bold face & purple for instructions
+\newcommand{\inst}[1]{\textbf{\color{Purple} #1}}
+%Bold face & green for instruction location
+\newcommand{\instloc}[1]{\textbf{\color{Green} #1}}
+%Boldface & orange for perspective views
+\newcommand{\pers}[1]{\textbf{\color{Orange} #1}}
+%Ital & orange for windows in perspective
+\newcommand{\wind}[1]{\emph{\color{Orange} #1}}
+%Bold and brown for config
+\newcommand{\conf}[1]{\textbf{\color{Brown} #1}}
+%Ital and brown for config window
+\newcommand{\confwind}[1]{\emph{\color{Brown} #1}}
+%Bold and YellowGreen for command instruction and 20pt hspace
+\newcommand{\cmd}[1]{\-\ \hspace{20pt} \textbf{\color{YellowGreen} #1}}
 \chapter{Setting Up Eclipse}
 \label{ch:Eclipse}
 
 \section{Configuring Eclipse on the UCT Computers}
 \label{sec:EclipseConfig}
-\textbf{Eclipse} is fully configured on the UCT campus computers but there are some steps that you need to remember before getting started. First plug in your STM32 board, Windows should start searching for a pre-configured driver once it's plugged in.\includegraphics[height=3ex]{driverico}\\
+\prg{Eclipse} is fully configured on the UCT campus computers but there are some steps that you need to remember before getting started. First plug in your STM32 board, Windows should start searching for a pre-configured driver once it's plugged in.\includegraphics[height=3ex]{driverico}\\
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{driverinst}
 \end{figure}
 \\
-Windows should eventually find the drivers and you're ready to go. Launch up Eclipse, it is important you leave the default workspace as \textbf{\color{Aquamarine}{C\textbackslash :Workspace}}.
+Windows should eventually find the drivers and you're ready to go. Launch up Eclipse, it is important you leave the default workspace as \loc{C:\textbackslash Workspace}.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{workspace}
 \end{figure}
 \\
-Then wait for \textbf{Eclipse} to load up, then create a new \textbf{\color{Purple}STM32F0xx C\textbackslash C++ Project}. The compiler will load up all the relevant files and put out a pretty empty generic template. First off, build the project so you have a set of binaries (.ELF files) to work with. You Build a project by following {\color{Green} $\textbf{Project}\rightarrow \textbf{Build All}$} ,or selecting \textbf{\color{Purple} Build Project} by right-clicking on the project file in the \textbf{\color{Orange}File Explorer window}.
+Then wait for \prg{Eclipse} to load up, then create a new \inst{STM32F0xx C\textbackslash C++ Project}. The compiler will load up all the relevant files and put out a pretty empty generic template. First off, build the project so you have a set of binaries (.ELF files) to work with. You Build a project by following \instloc{Project $\rightarrow$ Build All} ,or selecting \inst{Build Project} by right-clicking on the project file in the \wind{File Explorer window}.
 \\
-To run the code on your STM32 board, simply \textbf{\color{Purple} Debug} the project using the \textit{\color{Brown} GDB OpenOCD Debugging} configurations. The UCT computers will auto detect the project you are working on (only if you've already built it). Conveniently, the config for OpenOCD is filled in already so you can debug your code from the \textbf{\color{Orange}Debug Perspective}.
+To run the code on your STM32 board, simply \inst{Debug} the project using the \conf{GDB OpenOCD Debugging} configurations. The UCT computers will auto detect the project you are working on (only if you've already built it). Conveniently, the config for \prg{OpenOCD} is auto filled out already so you can debug your code from the \pers{Debug Perspective}.
+\par
+{
+\centering
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\justifying
+\parindent=0pt
+\color{Red}
+If you receive an error saying \textbf{"Program file does not exist"} then you haven't pre-built your program. For the Eclipse debugger to correctly fill out the default configurations for debugging you need to have built the project first.
+\par
+\centering
+\includegraphics[width=0.5\textwidth]{programfileerror}
+\\
+\justifying
+\parindent=0pt
+\textbf{Build} your project and then in the debug configurations menu, under the \underline{\smash{C\textbackslash C++ Application}} select to \textbf{Search Project} and chose the .ELF file. You should be able to debug now
+\end{minipage}
+}}
+\newpage
 \section{Configuring Eclipse for the STM32}
 \label{sec:eclipseconfig}
-The following is a guide to setting up the \textbf{Eclipse IDE} for Windows to debug the STM32F051 UCT Development board; I understand it is quite lengthy but it covers many details that are important when developing for the STM32. If your Eclipse is already set up, skip ahead to section \ref{sec:Perspectives} :Perspectives in Eclipse  to see how to navigate around the Eclipse environment.
+The following is a guide to configuring the \prg{Eclipse IDE} for Windows to debug the STM32F051 UCT Development board; I understand it is quite lengthy but it covers many details that are important when developing for the STM32. If your \prg{Eclipse} is already set up, skip ahead to \textbf{Section \ref{sec:Perspectives} :Perspectives in Eclipse} to see how to navigate around the Eclipse environment.
 \par
-After installing Eclipse there is a section explaining Eclipses' functionality and how to get the most out of your STM32 development board. Some of the installation steps may have already been completed in preparation for STM32 development in your previous courses, just skip those installations if they have already been performed on the computer you are setting up.
+After installing and configuring Eclipse there is a section explaining Eclipses' functionality and how to get the most out of your STM32 development board. This guide was written using Eclipse Mars 2 CDT 8.8.1, if you follow the steps EXACTLY it will work.
 \subsection{Installation}
+What you need to install and the order in which you ought to do it.
 \subsubsection{gcc-arm-none-eabi}
 \label{subsec:gccinst}
 As with regular assembly development for the STM32F051 (hence forth the STM32), the standard arm development tools are needed to assemble our written source code (main.s) into an Assembly coded object file (main.o) and finally to link that object file to the particular memory addresses of our target processor (main.elf). 
-So download and install the \textbf{\color{Brown} GCC-ARM-NONE-EABI toolset} from \href{https://vula.uct.ac.za/x/m9Z91P}{\color{Blue} \underline{\smash{Vula}}}.Otherwise get it from the  \href{https://launchpad.net/gcc-arm-embedded}{\color{Blue}\underline{\smash{official site}}}\footnote{https://launchpad.net/gcc-arm-embedded}.
-\\
-Remember that this is a 32-bit version of the development tools consisting of 32-bit executables. Even if you are running a 64-bit system you will still be using these tools. Once the files are extracted you will be prompted to \textbf{\color{Purple}"Add path to environment variable"}
+So download and install the \textbf{\color{Brown} GCC-ARM-NONE-EABI toolset} from \href{https://vula.uct.ac.za/x/m9Z91P}{\color{Blue} \underline{\smash{Vula}}}.Otherwise get it from the  \href{https://launchpad.net/gcc-arm-embedded}{\color{Blue}\underline{\smash{official site}}}   \hspace{1pt}\footnote{\url{https://launchpad.net/gcc-arm-embedded}}.
+\par
+Remember that this is a 32-bit version of the development tools consisting of 32-bit executables. Even if you are running a 64-bit system you will still be using these tools. Once the files are extracted you will be prompted to \inst{"Add path to environment variable"}
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=0.6\textwidth]{gccinst}
 \end{figure}
 \newpage
-You'll want to select this parameter, it adds the location of all the .exe's to your Windows advanced system settings so they can be run from any location without having to navigate to \textbf{\color{Aquamarine} C:\textbackslash Program Files (x86)\textbackslash Gnu Tools Arm Embedded\textbackslash ... }
+You'll want to select this parameter, it adds the location of all the .exe's to your Windows Path Variables, in advanced system settings, so they can be run from any location without having to navigate to \loc{C:\textbackslash Program Files (x86)\textbackslash Gnu Tools Arm Embedded\textbackslash ... }
 \\
-You don't need to worry about the Readme or GCCVAR.bat, so deselect both and finish the installation. Included in the \textbf{\color{Brown} GNU Tools} we've just installed are debugging, compiling and linker tools provided specifically for Arm development, its' an open source tool chain which you can read about on the official \href{https://launchpad.net/gcc-arm-embedded}{\color{Blue} \underline{\smash{GCC-Arm-Embedded website}}}\footnote{https://launchpad.net/gcc-arm-embedded}. Just to ensure that it is installed correctly (and the system path has been added to your environment variable correctly), from your command line run;
+You don't need to worry about the Readme or GCCVAR.bat, so deselect both and finish the installation. Included in the \textbf{\color{Brown} GNU Tools} we've just installed are debugging, compiling and linker tools provided specifically for Arm development, its' an open source tool chain which you can read about on the official \href{https://launchpad.net/gcc-arm-embedded}{\color{Blue} \underline{\smash{GCC-Arm-Embedded website}}}\hspace{1pt}\footnote{\url{https://launchpad.net/gcc-arm-embedded}}. Just to ensure that it is installed correctly (and the system path has been added to your environment variable correctly), from your command line run;
 \\
-\-\ \hspace{20pt} \textbf{\color{YellowGreen} \$  arm-none-eabi-as --version}
+\cmd{\$  arm-none-eabi-as --version}
 \\
 It should produce some details about the current GNU assembler version (this test is applicable for any of the GCC Arm tools; \textbf{ls}, \textbf{gdb} etc \ldots)
 \begin{figure}[hbtp]
@@ -47,11 +85,12 @@ It should produce some details about the current GNU assembler version (this tes
 \includegraphics[width=0.6\textwidth]{gccinfo}
 \end{figure}
 \\
-A useful trick to note is that, within any file in windows, pressing the \textbf{\color{Green} SHIFT key} and \textbf{\color{Green} right clicking} inside the folder gives you the ability to open a command window (CMD) at the files current location. This isn't really important but it might come in handy.
+A useful trick to note is that, within any file in windows, pressing the \inst{SHIFT key} and \inst{right clicking} inside the folder gives you the ability to open a command window (CMD) at the files current location. This isn't really important but it might come in handy.
 \begin{figure}[hbtp]
 \centering
 \includegraphics{cmdwindow}
 \end{figure}
+
 \newpage
 \centering
 \fbox{
@@ -66,16 +105,16 @@ A useful trick to note is that, within any file in windows, pressing the \textbf
 \raggedright
 To add the path variable you must navigate to:
 \\
-\-\ \hspace{20pt} \textbf{\color{Green} Control Panel $\rightarrow$ Advanced System Settings $\rightarrow$ Environment Variables}
+\cmd{Control Panel $\rightarrow$ Advanced System Settings $\rightarrow$ Environment Variables}
 \\
 \centering
 \includegraphics[width=0.6\textwidth]{envvar}
 \\
 \raggedright
 We want to edit the \textbf{path variable} , in the variable value paste (the semi-colon is \underline{\smash{VERY IMPORTANT}}):\\
-\-\ \hspace{20pt} \textbf{\color{Aquamarine} C:\textbackslash Program Files (x86)\textbackslash GNU Tools ARM Embedded\textbackslash 4.8 2014q2\textbackslash bin;}
+\-\ \hspace{20pt} \loc{C:\textbackslash Program Files (x86)\textbackslash GNU Tools ARM Embedded\textbackslash 4.8 2014q2\textbackslash bin;}
 \\
-and then accept this by pressing \textbf{\color{Purple} OK} until you are out of the system properties tab. Depending on where you installed your Tool Chain to be, this location may change so find the \textbf{bin} folder within that location and add that value to the path variable
+and then accept this by pressing \inst{OK} until you are out of the system properties tab. Depending on where you installed your Tool Chain to be, this location may change so find the \textbf{bin} folder within that location and add that value to the path variable
 \end{minipage}
 }
 \justifying
@@ -83,22 +122,23 @@ and then accept this by pressing \textbf{\color{Purple} OK} until you are out of
 \label{Inst:OpenOCD}
 Next we need to install \textbf{\color{Brown} OpenOCD}, the \textbf{on chip debugging utility} that lets us upload our code onto our target STM32. The debugging process takes place between the ST-Link device and the target STM32. What you may not realize is that the ST-Link is actually another specially programmed STM32 microcontroller. The  ST-Link receives code from the computer, pretty much line by line, it then prepares our target STM32 to receive new code to be flashed to its memory by pulling some pins high/low in a particular order and finally it feeds our code to the target micro via a communication standard called JTAG.
 \\
-Download \href{https://vula.uct.ac.za/x/sRNwF6}{\color{Blue}\underline{\smash{OpenOCD-0.8.0.zip}}} from Vula or the \href{http://openocd.org/}{\color{Blue}\underline{\smash{OpenOCD Website}}}\footnote{http://openocd.org/} and extract its' contents somewhere useful like in \textbf{\color{Aquamarine} C:\textbackslash Program Files\textbackslash OpenOCD}
+Download \href{https://vula.uct.ac.za/x/sRNwF6}{\color{Blue}\underline{\smash{OpenOCD-0.8.0.zip}}} from Vula or the \href{http://openocd.org/}{\color{Blue}\underline{\smash{OpenOCD Website}}}\hspace{1pt}\footnote{\url{http://openocd.org/}} and extract its' contents somewhere useful like in \loc{C:\textbackslash Program Files\textbackslash OpenOCD}
+\parindent=0pt
 \par
-\emph{\color{Gray} Remember this location (\textbf{\color{Aquamarine} file name}) to which you extracted OpenOCD to, mine is called OpenOCD and is in the location listed above, and yours might be different. We will need this for Debugging with Eclipse: \ref{sec:Debug}}
+\emph{\color{Gray} Remember this location (\loc{file name}) to which you extracted OpenOCD to, mine is called OpenOCD and is in the location listed above, and yours might be different. We will need this for Debugging with Eclipse: \ref{sec:Debug}}
 \par
-Then navigate to \textbf{\color{Aquamarine}C:\textbackslash Program Files\textbackslash OpenOCD\textbackslash bin-x64} and then \textbf{\color{Purple} rename executables}:
+Then navigate to \loc{C:\textbackslash Program Files\textbackslash OpenOCD\textbackslash bin-x64} and then \inst{rename executables}:
 \\
-\textbf{\color{Brown}openocd-x64-0.8.0.exe} to \textbf{\color{Brown}openocd.exe}
+\conf{openocd-x64-0.8.0.exe} to \conf{openocd.exe}
 \\
-This just makes things a bit easier for us. We now want to add \textbf{\color{Brown} OpenOCD's} path to the Environment Variables so once again, navigate to:\\
-\textbf{\color{Green} Control Panel $\rightarrow$ System $\rightarrow$ Advanced System Settings $\rightarrow$ Environment Variables\ldots}
-\\
-Editing the path variable, we will see there is already a value for arm-none-eabi's tools which was added in \ref{subsec:gccinst}, so after this we \underline{\smash{append}} or paste in the location of OpenOCD:
+This just makes things a bit easier for us. We now want to add OpenOCD's path to the Environment Variables so once again, navigate to:\\
+\-\ \hspace{20pt} \instloc{Control Panel $\rightarrow$ System $\rightarrow$ Advanced System Settings $\rightarrow$ Environment Variables\ldots}
+\par
+Editing the path variable, we will see there is already a value for \textbf{arm-none-eabi's} tools which was added earlier in \ref{subsec:gccinst}, so after this we \underline{\smash{append}} or paste in the location of OpenOCD:
+\par
+\loc{C:\textbackslash Program Files\textbackslash OpenOCD\textbackslash bin-x64\textbackslash openocd.exe;}
 \\
 \underline{\smash{(NOTE: the semi-colon is VERY IMPORTANT)}}
-\\
-\textbf{\color{Aquamarine} C:\textbackslash Program Files\textbackslash OpenOCD\textbackslash bin-x64\textbackslash openocd.exe;}
 \par
 \centering
 \fbox{
@@ -106,7 +146,7 @@ Editing the path variable, we will see there is already a value for arm-none-eab
 \color{Red}
 Make sure there are \underline{\smash{no spaces}} between each subsequent path variable, only semi-colons. Mine looks like:
 \\
-{\justifying \textbf{C:\textbackslash ~MinGW\textbackslash bin;C:\textbackslash ~Program Files ~(x86)\textbackslash ~GNU Tools ~ARM Embedded\textbackslash ~Q2\textbackslash ~bin;C:\textbackslash ~Program ~Files\textbackslash ~OpenOCD\textbackslash ~bin-x64;}}
+{\raggedleft \textbf{C:\textbackslash ~MinGW\textbackslash bin;C:\textbackslash ~Program Files ~(x86)\textbackslash ~GNU Tools ~ARM Embedded\textbackslash ~Q2\textbackslash ~bin;C:\textbackslash ~Program ~Files\textbackslash ~OpenOCD\textbackslash ~bin-x64;}}
 \\
 If there are spaces after the semi-colons, windows won't recognize the paths as system variables and it won't work!
 \end{minipage}
@@ -114,7 +154,7 @@ If there are spaces after the semi-colons, windows won't recognize the paths as 
 \par
 \raggedright
 Finally, test the path has been added correctly by running the following in the command line:\\
-\-\ \hspace{20pt} \textbf{\color{YellowGreen} \$ openocd.exe --version}
+\cmd{\$ openocd.exe --version}
 \\
 And you should be rewarded with some more version details\ldots
 \\
@@ -127,7 +167,7 @@ And you should be rewarded with some more version details\ldots
 \subsubsection{Install ST-Link Utility}
 \label{subsec:stlink}
 As mentioned above, the on chip debugger makes use of the ST-Link device (we use the ST-Link V2 in particular) so we obviously need some drivers and programs for all this to work. 
-Download the \href{https://vula.uct.ac.za/x/8LNN3V}{\color{Blue}\underline{\smash{ST-LINK Utility}}} from Vula or \href{http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html}{\color{Blue}\underline{\smash{ST Electronics' Site}}}\footnote{$http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html$} and install the utility. This will also install the ST-Link USB drivers as well as the device utility (choose to \textbf{\color{Purple} Trust/Install} the STMicroelectronics Ports (COM \& LPT) device software)
+Download the \href{https://vula.uct.ac.za/x/8LNN3V}{\color{Blue}\underline{\smash{ST-LINK Utility}}} from Vula or \href{http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html}{\color{Blue}\underline{\smash{ST Electronics' Site}}}\hspace{1pt}\footnote{\url{http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html}} and install the utility. This will also install the ST-Link USB drivers as well as the device utility (choose to \textbf{\color{Purple} Trust/Install} the STMicroelectronics Ports (COM \& LPT) device software)
 \\
 \begin{figure}[htbp]
 \centering
@@ -140,10 +180,11 @@ For some reason the installation attempts to install the device drivers twice, j
 \centering
 \includegraphics[width=0.6\textwidth]{stready}
 \end{figure}
+\parindent=0pt
 \par
-Whilst the USB drivers are crucial for us, the actual \textbf{\color{Brown} ST-Link utility} isn't necessary but it is very useful. If you really mess up the program running on the micro or incompletely flash a program to it, it will let you erase the memory on board your STM32 micro.
+Whilst the USB drivers are crucial for us, the actual \conf{ST-Link utility} isn't necessary but it is very useful. If you really mess up the program running on the micro or incompletely flash a program to it, it will let you erase the memory on board your STM32 micro.
 \\
-Run the STM32 ST-Link Utility from wherever you installed it to and press the \textbf{\color{Purple} Connect to the Target} button 
+Run the STM32 ST-Link Utility from wherever you installed it to and press the \inst{Connect to the Target} button 
 \includegraphics[height=3ex]{conico}
 . There should now be a flashing green and red LED on your board and the table in the program will be populated with memory addresses (from 0x0800000 onwards) and hexadecimal numbers.
 \par
