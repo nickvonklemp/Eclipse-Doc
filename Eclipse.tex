@@ -55,6 +55,57 @@ If you receive an error saying \textbf{"Program file does not exist"} then you h
 \end{minipage}
 }}
 \newpage
+\section{TL;DR}
+\label{tldr}
+You might have already used your computer with your STM32 board in previous courses and you just want to get eclipse working. This is the itemized process, if you run into any problems you can use the rest of the guide as reference.
+\par
+\begin{enumerate}
+\raggedright
+\item Download Eclipse MARS for C/C++:\\
+\centering \href{http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars2}{\color{Blue} \underline{http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars2}}
+\\
+\raggedright
+\item In Eclipse, add the repository for GNU ARM ECLIPSE Tools:\\
+\centering \instloc{Help $\rightarrow$ Install New Software $\rightarrow$ Add}
+\\
+\raggedright
+Then in \underline{name}, fill in \textbf{GNU ARM ECLIPSE} and paste the P2P repository URL for the toolset in the \underline{location}; \url{http://gnuarmeclipse.sourceforge.net/updates} 
+\\
+Finally,tick and install \textbf{GNU ARM C/C++ Cross Development Tools}
+\raggedright
+\item From the same \textbf{Install New Software} window, add the P2P repo for the MARS CDT: \url{http://download.eclipse.org/tools/cdt/releases/8.8.1} and install:
+\\
+\centering \instloc{Optional Features $\rightarrow$ C/C++ GDB Hardware Debugging}
+\\
+\raggedright
+\item Create a new C project;\\
+\centering \instloc{File $\rightarrow$ New $\rightarrow$ Project $\rightarrow$ C/C++ $\rightarrow$ C Project}\\
+\raggedright 
+Click \textbf{Next}, choose a name for the project and make sure to select the \inst{STM32F0XX C/C++ Project} in project type and click \textbf{Next} all the way though.
+\raggedright
+\item Once you've made the project, build it using the \textbf{Internal Builder} which is selected by \inst{Right-Clicking} on the project;\\
+\centering \instloc{Project $\rightarrow$ Properties $\rightarrow$ C/C++ Build}
+\\
+\raggedright
+Then select \textbf{All Configurations} and choose the \textbf{Internal Builder}. Finally \inst{Right-Click} again on the project and choose \textbf{Build}.
+\item Once the project has been built, configure the Debugger by \inst{Right-Clicking} on the project;\\
+\centering \instloc{Debug As $\rightarrow$ Debug Configurations...}
+\\
+\raggedright
+\inst{Double-Click} on \textbf{GBD OpenOCD Debugging} to create a new config, then in the \underline{Debugger} tab, fill in the location of your OpenOCD version (the 64-bit one), mine is: \loc{C:\textbackslash Program Files\textbackslash OpenOCD\textbackslash bin-x64\textbackslash openocd.exe}. For the OpenOCD config options use:
+\\
+\centering \textbf{\color{Orange} -f interface/stlink-v2.cfg -f target/stm32f0x$\_$stlink.cfg}
+\\
+\raggedright
+And for the \underline{GDB executable} just use:
+\\
+\centering \textbf{\color{Orange} arm-none-eabi-gdb}
+\\
+\raggedright \emph{\color{Gray} If you have problems with this, see Section: \ref{sec:Debug}}
+\raggedright
+\item All thats left is to \inst{Apply} those settings and \inst{Debug}. Each time you alter the \textbf{main.c} file of the project you'll need to rebuild it and then debug it.
+\end{enumerate}
+\newpage
 \section{Configuring Eclipse for the STM32}
 \label{sec:eclipseconfig}
 The following is a guide to configuring the \prg{Eclipse IDE} for Windows to debug the STM32F051 UCT Development board; I understand it is quite lengthy but it covers many details that are important when developing for the STM32. If your \prg{Eclipse} is already set up, skip ahead to \textbf{Section \ref{sec:Perspectives} :Perspectives in Eclipse} to see how to navigate around the Eclipse environment.
@@ -77,7 +128,7 @@ You'll want to select this parameter, it adds the location of all the .exe's to 
 \\
 You don't need to worry about the Readme or GCCVAR.bat, so deselect both and finish the installation. Included in the \textbf{\color{Brown} GNU Tools} we've just installed are debugging, compiling and linker tools provided specifically for Arm development, its' an open source tool chain which you can read about on the official \href{https://launchpad.net/gcc-arm-embedded}{\color{Blue} \underline{\smash{GCC-Arm-Embedded website}}}\hspace{1pt}\footnote{\url{https://launchpad.net/gcc-arm-embedded}}. Just to ensure that it is installed correctly (and the system path has been added to your environment variable correctly), from your command line run;
 \\
-\cmd{\$  arm-none-eabi-as --version}
+\cmd{\$  arm-none-eabi-as -\hspace{2pt}- version}
 \\
 It should produce some details about the current GNU assembler version (this test is applicable for any of the GCC Arm tools; \textbf{ls}, \textbf{gdb} etc \ldots)
 \begin{figure}[hbtp]
@@ -85,7 +136,7 @@ It should produce some details about the current GNU assembler version (this tes
 \includegraphics[width=0.6\textwidth]{gccinfo}
 \end{figure}
 \\
-A useful trick to note is that, within any file in windows, pressing the \inst{SHIFT key} and \inst{right clicking} inside the folder gives you the ability to open a command window (CMD) at the files current location. This isn't really important but it might come in handy.
+A useful trick to remember is that, within any file in windows, pressing the \inst{SHIFT key} and \inst{right clicking} inside the folder gives you the ability to open a command window (CMD) at the files current location. This isn't really important but it might come in handy.
 \begin{figure}[hbtp]
 \centering
 \includegraphics{cmdwindow}
@@ -131,6 +182,8 @@ Then navigate to \loc{C:\textbackslash Program Files\textbackslash OpenOCD\textb
 \\
 \conf{openocd-x64-0.8.0.exe} to \conf{openocd.exe}
 \\
+\emph{\color{Gray} Windows 10 automatically includes executables in the file names so you would just change \conf{openocd-x64-0.8.0} to \conf{openocd}}
+\\
 This just makes things a bit easier for us. We now want to add OpenOCD's path to the Environment Variables so once again, navigate to:\\
 \-\ \hspace{20pt} \instloc{Control Panel $\rightarrow$ System $\rightarrow$ Advanced System Settings $\rightarrow$ Environment Variables\ldots}
 \par
@@ -154,7 +207,7 @@ If there are spaces after the semi-colons, windows won't recognize the paths as 
 \par
 \raggedright
 Finally, test the path has been added correctly by running the following in the command line:\\
-\cmd{\$ openocd.exe --version}
+\cmd{\$ openocd.exe -\hspace{2pt} -version}
 \\
 And you should be rewarded with some more version details\ldots
 \\
@@ -195,8 +248,8 @@ If you receive an error saying \textbf{"No ST-Link detected"} just unplug and pl
 \end{minipage}
 }
 \newpage
-A console will display some info about the current state of the device as well as the devices details.  This is a powerful too which lets you manually flash programs to your micro  or erase individual memory sectors but we don’t need to worry about this. All you need to know is that you can erase your chip by selecting:\\
-\-\ \hspace{20pt}\textbf{\color{Green} Target $\rightarrow$ Erase Chip}
+A console will display some info about the current state of the device as well as the devices details.  This is a powerful too which lets you manually flash programs to your micro  or erase individual memory sectors but we don't need to worry about this. All you need to know is that you can erase your chip by selecting:\\
+\-\ \hspace{20pt}\instloc{Target $\rightarrow$ Erase Chip}
 \\
 \begin{figure}[htbp]
 \centering
@@ -206,23 +259,23 @@ A console will display some info about the current state of the device as well a
 This cleans off any code you've flashed onto the micro and resets all memory vectors to \textbf{0xFFFFFFFFF}.
 The first \underline{\smash{(and only the first)}} time you plug in your STM32 board you should update the firmware of the ST-Link, this just means we flash new (better) code onto the STM32 which operates as the ST-Link.
 To do this, you will want to navigate to:\\
-\-\ \hspace{20pt}\textbf{\color{Green} ST-Link $\rightarrow$ Firmware Update}
+\-\ \hspace{20pt} \instloc{ST-Link $\rightarrow$ Firmware Update}
 \\
-Which opens the ST-Link Update window, first select \textbf{\color{Purple} "Device Connect"}. This will give you what appears to be an error about the device not being in DFU (\underline{\smash{Device Firmware Update}}) mode.\\
+Which opens the ST-Link Update window, first select \inst{Device Connect}. This will give you what appears to be an error about the device not being in DFU (\underline{\smash{Device Firmware Update}}) mode.\\
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=0.4\textwidth]{dfumode}
 \end{figure}
-\newpage
-This simply means the ST-Link isn't ready to have new code flashed to it, so we have to restart it. Remove the USB cable and re-plug it back in {\color{red}\underline{\smash{(don't just cycle the reset button, this won't work)}}}. The LED on the ST-Link should be a constant red now.
 \par
-Press the \textbf{\color{Purple} OK button} and then select \textbf{\color{Purple} "Device Connect"} again, the update utility should connect to your ST-Link now and it should display some information about what the current ST-Link firmware version is.
+This simply means the ST-Link isn't ready to have new code flashed to it, so we have to restart it. Remove the USB cable and re-plug it back in {\color{red}\underline{\smash{(don't just cycle the reset button, this won't work)}}}. The LED on the ST-Link should be a constant red now.
+\newpage
+Press the \inst{OK button} and then select \inst{Device Connect} again, the update utility should connect to your ST-Link now and it should display some information about what the current ST-Link firmware version is.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{firmup}
 \end{figure}
 \par
-Then select \textbf{\color{Purple} "Yes >>>>>"} to update the firmware to the newest version. The Red LED on the ST-Link will flash a few times until you receive an update complete notification. 
+Then select \inst{Yes >>>>>} to update the firmware to the newest version. The Red LED on the ST-Link will flash a few times until you receive an update complete notification. 
 \\
 \fbox{
 \begin{minipage}{0.9\textwidth}
@@ -238,14 +291,19 @@ Before continuing make sure you have disconnected \includegraphics[height=3ex]{d
 {\color{Red}
 in procedure 'transport'\\
 in procedure 'init'{
-\\
-\color{Black} So if you ever receive this sort of error, make sure all previous connections have been \textbf{\underline{\smash{terminated}}}.
+\parindent=0pt
+\par
+\justifying
+\color{Gray}\emph{ A 'transport' error is almost always because you have another process already using the debugging port, we'll talk more about this later in Section \ref{sec:Debug}. So if you ever receive this sort of error, make sure all previous connections have been \textbf{\underline{\smash{terminated}}}}.
 \newpage
 \justifying
+\color{Black}
 Through the ST-Link Utility you can flash compiled programs directly to the micro controller, assuming the program has been compiled correctly. To do this, select:\\
-\-\ \hspace{20pt} \textbf{\color{YellowGreen} Target $\rightarrow$ Program}\\
-And then navigate to a corresponding .hex or .bin file in your Eclipse Project (we will discuss this later) , its usually:\\ \textbf{\color{Aquamarine} C:\textbackslash <Eclipse Workspace> \textbackslash <Eclipse Project Name> \textbackslash Debug \textbackslash <Eclipse Project Name>.hex}\\
-Finally press \textbf{\color{Purple} Start} to begin the flashing procedure. You'll notice that, if the program is compiled correctly, the flasher will know the entry point to the STM32s' memory (0x8000000) 
+\-\ \hspace{20pt}\instloc{Target $\rightarrow$ Program}
+\\
+And then navigate to a corresponding .hex or .bin file in your Eclipse Project (we will discuss this later) , its usually:\\ \loc{C:\textbackslash <Eclipse Workspace> \textbackslash <Eclipse Project Name> \textbackslash Debug \textbackslash <Eclipse Project Name>.hex}
+\\
+Finally press \inst{Start} to begin the flashing procedure. You'll notice that, if the program is compiled correctly, the flasher will know the entry point to the STM32s' memory (0x8000000) 
 \\
 \begin{figure}[htbp]
 \centering
@@ -254,51 +312,60 @@ Finally press \textbf{\color{Purple} Start} to begin the flashing procedure. You
 \justifying
 \par
 \subsubsection{Install Java}
-So, first things first, we need to set up Java. Even though we will be using C/C++ to program our micro, Eclipse is an inherent Java IDE so download the latest {\color{Blue}\underline{\smash{\href{https://www.java.com/en/download/manual.jsp}{Java Runtime Edition}\footnote{https://www.java.com/en/download/manual.jsp}}}} (JRE) from the official Java website. Make sure to download the correct 64-bit or 32-bit version (depending on your operating system). 
+So, first things first, we need to set up Java. Even though we will be using C/C++ to program our micro, Eclipse is an inherent Java IDE so download the latest \href{https://www.java.com/en/download/manual.jsp}{\color{Blue}\underline{\smash{Java Runtime Edition}}}\hspace{1pt}\footnote{\url{https://www.java.com/en/download/manual.jsp}} (JRE) from the official Java website. Make sure to download the correct 64-bit or 32-bit version (depending on your operating system). 
 Alternatively if you already have Java installed, you can update it through the control panel;\\
-\-\ \hspace{20pt}\textbf{\color{Green} Control Panel $\rightarrow$ Java $\rightarrow$ Update $\rightarrow$ Update Now}
+\-\ \hspace{20pt}\instloc{Control Panel $\rightarrow$ Java $\rightarrow$ Update $\rightarrow$ Update Now}
 \subsubsection{Get Eclipse}
 Now this is where things get a bit tricky, Eclipse is a very versatile IDE which can be configured to do almost anything but it can get pretty confusing to configure/use.
-You want to download the latest {\color{Blue}\underline{\smash{\href{http://https://eclipse.org/cdt/downloads.php}{Eclipse C development tool package}\footnote{https://eclipse.org/cdt/downloads.php}}}} (Eclipse CDT) at the time of writing; the latest build of Eclipse is Mars 8.8.1.\\
-Eclipse is distributed as an empty package which requires a lot configuring before it does what you want it to. Extract the Eclipse CDT zip to an easily accessible folder, I recommend extracting to your \textbf{\color{Aquamarine} C:\textbackslash file.}
-\\
-\fbox{
+You want to download the latest\href{http://https://eclipse.org/cdt/downloads.php}{\color{Blue}\underline{\smash{Eclipse C development tool package}}}\hspace{1pt}\footnote{\url{https://eclipse.org/cdt/downloads.php}} (Eclipse CDT) at the time of writing; the latest build of Eclipse is Mars 8.8.1.\\
+Eclipse is distributed as an empty package which requires a lot configuring before it does what you want it to. Extract the Eclipse CDT zip to an easily accessible folder, I recommend extracting to your \loc{C:\textbackslash file.}
+\par
+{\fbox{
+\centering
 \begin{minipage}{0.9\textwidth}
+\justifying
+\parindent=0pt
 \color{Red}
-Seeing as some of you might be doing computer programming and you use Eclipse for Java development, rename this Eclipse folder to \textbf{\color{Green} Eclipse-arm-dev}, to differentiate it from your Java IDE.
+Seeing as some of you might be doing computer programming and you use Eclipse for Java development, rename this Eclipse folder to \instloc{Eclipse-arm-dev}, to differentiate it from your Java IDE.
 \end{minipage}
-}
+}}
 \newpage
+\parindent=0pt
 Once everything is extracted, \underline{\smash{pin the Eclipse.exe to your Taskbar}} for easy access and start it up for the first time. On your first launch you will be requested to choose a workspace location where all your projects will be stored. 
 \\
 \justifying
-It doesn't matter where you select your workspace to be but I like to keep it within my Eclipse folder, be sure to select \textbf{"Use this as the default and do not ask again"} otherwise you will always be asked this.
+It doesn't matter where you select your workspace to be but I like to keep it within my Eclipse folder, be sure to select \inst{Use this as the default and do not ask again} otherwise you will always be asked this.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{eclipseworkspace}
 \end{figure}
+\justifying
+\parindent=0pt
 \par
-Click \textbf{\color{Purple}OK} and wait whilst Eclipse loads up. Usually your latest project will always open up but seeing as this is our first time running the program we are greeted with a welcome message.
-\begin{minipage}{\textwidth}
+Click \inst{OK} and wait whilst Eclipse loads up. Usually your latest project will always open up but seeing as this is our first time running the program we are greeted with a welcome message.
+\par
 \emph{\color{Gray} Note that when you are using the UCT lab computers you must not change the work space directory.}
-\end{minipage}
-\centering
+\par
+{
 \fbox{
+\color{Red}
 \begin{minipage}{0.9\textwidth}
 \justifying
-\color{Red}
-{If Java is not correctly installed you will receive an error that Eclipse cannot open a Java DLL or a Config file, if this happens re-download and install Java, make sure that the \underline{\smash{Eclipse}} and \underline{\smash{Java}} versions you are using are both 32-bit or 64 bit. THEY MUST BE THE SAME!}
+\parindent=0pt
+If Java is not correctly installed you will receive an error that Eclipse cannot open a Java DLL or a Config file, if this happens re-download and install Java, make sure that the \underline{\smash{Eclipse}} and \underline{\smash{Java}} versions you are using are both 32-bit or 64 bit. THEY MUST BE THE SAME!
 \par
 \centering
 \includegraphics[width=0.6\textwidth]{JVM}
 \end{minipage}
 }
-\\
+}
 \justifying
+\parindent=0pt
+\par
 \emph{
-If Eclipse is already installed in your machine you don’t need to do the above, just skip through to Step 7. If you are configuring a computer that already has Eclipse, make sure you are working with the C/C++ version of eclipse. To check this go to:
+If Eclipse is already installed in your machine you don't need to do the above, just skip ahead to Configuring Eclipse, \ref{configeclipse}. If you are configuring a computer that already has Eclipse, make sure you are working with the C/C++ version of eclipse. To check this go to:
 \\
-\-\ \hspace{20pt} \textbf{Help $\rightarrow$ Install New Software $\rightarrow$ What is already installed?}
+\-\ \hspace{20pt} \instloc{Help $\rightarrow$ Install New Software $\rightarrow$ What is already installed?}
 \\
 In the presented list, you should see Eclipse IDE for C/C++ developers or EPP CPP Feature. These are very important as it means the Eclipse build inherently supports CDT (C Development Tools). If it lists Eclipse IDE for Java developers then the build of Eclipse is a Java version, you then need to install C/C++ Development tools if it is not listed.
 \\
@@ -309,39 +376,41 @@ This guide is based around a Mars build which inherently supports C/C++ developm
 }
 \newpage
 \subsubsection{Configuring Eclipse}
+\label{configeclipse}
 Seeing that we have already installed the CDT build of Eclipse the IDE will naturally support 
-C/C++ compiling. We don’t need to reinstall the CDT package but there are some parts of it we don’t already have. If you are working with eclipse and you need to add a package to the environment, you can follow these steps. You can add additional software to your eclipse build under:\\
-\-\ \hspace{20pt} \textbf{\color{Green} Help $\rightarrow$ Install New Software}
+C/C++ compiling. We don't need to re-install the CDT package but there are some parts of it we don't already have. If you are working with eclipse and you need to add a package to the environment (not necessarily the ones we are working with now, the process is the same), you can follow these steps. You can add additional software to your eclipse build under:\\
+\-\ \hspace{20pt} \instloc{Help $\rightarrow$ Install New Software}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{installnewsoft}
 \end{figure}
+\\
+Then \inst{Add} (adjacent to the "\underline{Work with:}" field) a new repository to work with, call it \loc{Mars CDT} and choose its location to be;\\
+\textbf{\color{Orange}http://download.eclipse.org/tools/cdt/releases/8.8.1}
 \par
-Then \textbf{\color{Purple} Add} (adjacent to the "Work with:" field) a new repository to work with, call it Mars CDT and choose its location to be;\\
-\textbf{\color{Orange}http://download.eclipse.org/tools/cdt/releases/8.8.1}\\
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=0.7\textwidth]{addrepo}
 \end{figure}
-\newpage
 \justifying
-This is where you would install/update your CDT package if you needed to, expand the \textbf{\color{Purple} "CDT Optional Features"} and select both \underline{\smash{C/C++ GDB Hardware Debugging}} and \underline{\smash{C/C++ GCC Cross}} \underline{\smash{Compiler Support}} then click next and wait while it calculates the items which are to be installed.
-\\
+\parindent=0pt
+This is where you would \textbf{install/update} your CDT package if you needed to, expand the \inst{CDT Optional Features} and select both \underline{\smash{C/C++ GDB Hardware Debugging}} and \underline{\smash{C/C++ GCC Cross}} \underline{\smash{Compiler Support}} then click next and wait while it calculates the items which are to be installed.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{GCCextra}
 \end{figure}
+\newpage
+\parindent=0pt
 \par
-Click \textbf{\color{Purple} Next} and \textbf{\color{Purple} Agree} with the Eclipse Terms and Conditions (you can read them if you'd like) and then wait while Eclipse installs the new software.
+Click \textbf{\color{Purple} Next} and \textbf{\color{Purple} Agree} with the Eclipse Terms and Conditions (you can read them if you \underline{really} want to) and then wait while Eclipse installs the new software.
 \\
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=0.7\textwidth]{inst}
 \end{figure}
-\\
-Eclipse will then download the GDB Hardware Debug package which allows us to use OpenOCD from Eclipse. At the end of this installation you will be prompted to restart Eclipse. The next step is to configure Eclipse to follow the process of compiling, making, linking, assembling and then flashing our code which would otherwise be a huge, complicated task. Thankfully Eclipse is open source and Arm processors (especially the STM32 family) are very popular for embedded systems development, so people have created packages which set up eclipse for us.
+Eclipse will then download the \conf{GDB Hardware Debug} package which allows us to use OpenOCD from Eclipse. At the end of this installation you will be prompted to restart Eclipse. The next step is to configure Eclipse to follow the process of compiling, making, linking, assembling and then flashing our code which would otherwise be a huge, complicated task. Thankfully Eclipse is open source and Arm processors (especially the STM32 family) are very popular for embedded systems development, so people have created packages which set up eclipse for us.
 \par
-Once again navigate to the install new software window and add another repository, call it \textbf{\color{Purple} GNU ARM Eclipse plug-ins} and use the location: \textbf{\color{Orange} \underline{\smash{\href{http://gnuarmeclipse.sourceforge.net/updates}{http://gnuarmeclipse.sourceforge.net/updates}}}}.  Then select all the packages and install them. This will take quite a while to download/install so take this time to think about life and reflect on the decisions you've made which have led you here to Mechatronics, or think about some of the silly things you've said or done which you regret. If you feel inclined, you can read up on the \underline{\color{Blue} \smash{\href{http://gnuarmeclipse.livius.net/blog/}{Eclipse arm tools}}}\footnote{http://gnuarmeclipse.livius.net/blog/}.  
+Once again navigate to the install new software window and add another repository, call it \inst{GNU ARM Eclipse plug-ins} and use the location: \loc{\underline{\smash{http://gnuarmeclipse.sourceforge.net/updates}}}.  Then select all the packages and install them. This will take quite a while to download/install so take this time to think about life and reflect on the decisions you've made which have led you here to Mechatronics, or think about some of the silly things you've said or done which you regret. If you feel inclined, you can read up on the \href{http://gnuarmeclipse.livius.net/blog/}{\underline{\color{Blue} \smash{Eclipse arm tools}}}\hspace{1pt}\footnote{\url{http://gnuarmeclipse.livius.net/blog/}}.  
 \newpage
 \fbox{
 \begin{minipage}{0.9\textwidth}
