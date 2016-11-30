@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.10)  23 JUN 2016 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.10)  21 AUG 2016 12:14
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1692,19 +1692,25 @@ LaTeX Font Warning: Font shape `T1/cmbr/bx/it' undefined
 (Font)              using `T1/cmbr/bx/n' instead on input line 179.
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 204--204
-\T1/cmbr/bx/n/10.95 C:\ MinGW\bin;C:\ Pro-gram Files  (x86)\ GNU Tools  ARM Em-
-bed-
+Overfull \hbox (1.71089pt too wide) in paragraph at lines 181--189
+[]\T1/cmbr/m/sl/10.95 Windows 10 au-to-mat-i-cally in-cludes ex-e-cuta-bles in 
+the file names so you would just change []\T1/cmbr/bx/it/10.95 openocd-
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 206--206
+\T1/cmbr/bx/it/10.95 C:\ MinGW\bin;C:\ Pro-gram Files  (x86)\ GNU Tools  ARM Em
+-bed-
  []
 
 <figs/openocdver.png, id=116, 442.65375pt x 105.39375pt>
 File: figs/openocdver.png Graphic file (type png)
 
 <use figs/openocdver.png>
-Package pdftex.def Info: figs/openocdver.png used on input line 214.
+Package pdftex.def Info: figs/openocdver.png used on input line 216.
 (pdftex.def)             Requested size: 317.07614pt x 75.49747pt.
  [7 <./figs/openocdver.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 [][][]$\T1/cmtl/m/n/9 http : / / www . st . com / content / st _ com / en / pro
 ducts / embedded-[]software / development-[]tool-[]software /$
  []
@@ -1713,51 +1719,51 @@ ducts / embedded-[]software / development-[]tool-[]software /$
 File: figs/installstutil.png Graphic file (type png)
 
 <use figs/installstutil.png>
-Package pdftex.def Info: figs/installstutil.png used on input line 225.
+Package pdftex.def Info: figs/installstutil.png used on input line 227.
 (pdftex.def)             Requested size: 271.7835pt x 125.9085pt.
 
 <figs/stready.png, id=129, 374.90062pt x 126.4725pt>
 File: figs/stready.png Graphic file (type png)
  <use figs/stready.png>
-Package pdftex.def Info: figs/stready.png used on input line 232.
+Package pdftex.def Info: figs/stready.png used on input line 234.
 (pdftex.def)             Requested size: 271.7835pt x 91.69116pt.
 
 <figs/conico.png, id=131, 26.34843pt x 24.84282pt>
 File: figs/conico.png Graphic file (type png)
  <use figs/conico.png>
-Package pdftex.def Info: figs/conico.png used on input line 239.
+Package pdftex.def Info: figs/conico.png used on input line 241.
 (pdftex.def)             Requested size: 16.45325pt x 15.51251pt.
 
 [8 <./figs/installstutil.png> <./figs/stready.png> <./figs/conico.png>]
 <figs/stutil.png, id=141, 457.71pt x 333.49594pt>
 File: figs/stutil.png Graphic file (type png)
  <use figs/stutil.png>
-Package pdftex.def Info: figs/stutil.png used on input line 254.
+Package pdftex.def Info: figs/stutil.png used on input line 256.
 (pdftex.def)             Requested size: 362.37569pt x 264.0441pt.
 
 <figs/dfumode.png, id=142, 215.30438pt x 128.73094pt>
 File: figs/dfumode.png Graphic file (type png)
  <use figs/dfumode.png>
-Package pdftex.def Info: figs/dfumode.png used on input line 265.
+Package pdftex.def Info: figs/dfumode.png used on input line 267.
 (pdftex.def)             Requested size: 181.18439pt x 108.33359pt.
 
-Overfull \hbox (17.32146pt too wide) in paragraph at lines 249--267
+Overfull \hbox (17.32146pt too wide) in paragraph at lines 251--269
 \T1/cmbr/m/n/10.95 This cleans off any code you've flashed onto the mi-cro and 
-re-sets all mem-ory vec-tors to \T1/cmbr/bx/n/10.95 0xFFFFFFFFF\T1/cmbr/m/n/10.
-95 .
+re-sets all mem-ory vec-tors to \T1/cmbr/bx/it/10.95 0xFFFFFFFFF\T1/cmbr/m/n/10
+.95 .
  []
 
 [9 <./figs/stutil.png> <./figs/dfumode.png>]
 <figs/firmup.png, id=149, 377.15906pt x 267.24844pt>
 File: figs/firmup.png Graphic file (type png)
  <use figs/firmup.png>
-Package pdftex.def Info: figs/firmup.png used on input line 273.
+Package pdftex.def Info: figs/firmup.png used on input line 275.
 (pdftex.def)             Requested size: 317.07614pt x 224.67474pt.
 
 <figs/disconico.png, id=150, 28.60687pt x 24.84282pt>
 File: figs/disconico.png Graphic file (type png)
  <use figs/disconico.png>
-Package pdftex.def Info: figs/disconico.png used on input line 286.
+Package pdftex.def Info: figs/disconico.png used on input line 288.
 (pdftex.def)             Requested size: 17.86353pt x 15.51251pt.
 
 [10 <./figs/firmup.png> <./figs/disconico.png>]
@@ -1765,65 +1771,65 @@ Package pdftex.def Info: figs/disconico.png used on input line 286.
 File: figs/stutilflash.png Graphic file (type png)
 
 <use figs/stutilflash.png>
-Package pdftex.def Info: figs/stutilflash.png used on input line 308.
+Package pdftex.def Info: figs/stutilflash.png used on input line 310.
 (pdftex.def)             Requested size: 271.7835pt x 149.78836pt.
  [11 <./figs/stutilflash.png>]
 <figs/eclipseworkspace.png, id=171, 356.0803pt x 164.86594pt>
 File: figs/eclipseworkspace.png Graphic file (type png)
 
 <use figs/eclipseworkspace.png>
-Package pdftex.def Info: figs/eclipseworkspace.png used on input line 338.
+Package pdftex.def Info: figs/eclipseworkspace.png used on input line 340.
 (pdftex.def)             Requested size: 271.7835pt x 125.84026pt.
 
 <figs/JVM.png, id=172, 356.0803pt x 128.73094pt>
 File: figs/JVM.png Graphic file (type png)
  <use figs/JVM.png>
-Package pdftex.def Info: figs/JVM.png used on input line 358.
+Package pdftex.def Info: figs/JVM.png used on input line 360.
 (pdftex.def)             Requested size: 244.60349pt x 88.42961pt.
 LaTeX Font Info:    Font shape `T1/cmtl/m/it' in size <10.95> not available
-(Font)              Font shape `T1/cmtl/m/sl' tried instead on input line 374.
+(Font)              Font shape `T1/cmtl/m/sl' tried instead on input line 376.
  [12 <./figs/eclipseworkspace.png> <./figs/JVM.png>]
 <figs/installnewsoft.png, id=181, 469.755pt x 219.06844pt>
 File: figs/installnewsoft.png Graphic file (type png)
 
 <use figs/installnewsoft.png>
-Package pdftex.def Info: figs/installnewsoft.png used on input line 383.
+Package pdftex.def Info: figs/installnewsoft.png used on input line 385.
 (pdftex.def)             Requested size: 317.07614pt x 147.86815pt.
 
 <figs/addrepo.png, id=182, 368.1253pt x 141.52875pt>
 File: figs/addrepo.png Graphic file (type png)
  <use figs/addrepo.png>
-Package pdftex.def Info: figs/addrepo.png used on input line 391.
+Package pdftex.def Info: figs/addrepo.png used on input line 393.
 (pdftex.def)             Requested size: 317.07614pt x 121.91103pt.
 
 <figs/GCCextra.png, id=183, 471.26062pt x 131.74219pt>
 File: figs/GCCextra.png Graphic file (type png)
  <use figs/GCCextra.png>
-Package pdftex.def Info: figs/GCCextra.png used on input line 398.
+Package pdftex.def Info: figs/GCCextra.png used on input line 400.
 (pdftex.def)             Requested size: 362.37569pt x 101.30508pt.
 
 [13 <./figs/installnewsoft.png> <./figs/addrepo.png> <./figs/GCCextra.png>]
 <figs/inst.png, id=192, 331.2375pt x 145.29282pt>
 File: figs/inst.png Graphic file (type png)
  <use figs/inst.png>
-Package pdftex.def Info: figs/inst.png used on input line 407.
+Package pdftex.def Info: figs/inst.png used on input line 409.
 (pdftex.def)             Requested size: 317.07614pt x 139.0871pt.
  [14 <./figs/inst.png>]
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <8> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 426.
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 428.
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <7> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 426.
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 428.
  <figs/localrepo.png, id=206, 368.1253pt x 141.52875pt>
 File: figs/localrepo.png Graphic file (type png)
 
 <use figs/localrepo.png>
-Package pdftex.def Info: figs/localrepo.png used on input line 426.
+Package pdftex.def Info: figs/localrepo.png used on input line 428.
 (pdftex.def)             Requested size: 244.60349pt x 94.042pt.
  [15 <./figs/localrepo.png>]
 <figs/cproj.png, id=216, 329.73187pt x 426.09187pt>
 File: figs/cproj.png Graphic file (type png)
  <use figs/cproj.png>
-Package pdftex.def Info: figs/cproj.png used on input line 436.
+Package pdftex.def Info: figs/cproj.png used on input line 438.
 (pdftex.def)             Requested size: 271.7835pt x 351.21805pt.
 
 [16 <./figs/cproj.png>]
@@ -1831,62 +1837,62 @@ Package pdftex.def Info: figs/cproj.png used on input line 436.
 File: figs/targetproc.png Graphic file (type png)
 
 <use figs/targetproc.png>
-Package pdftex.def Info: figs/targetproc.png used on input line 453.
+Package pdftex.def Info: figs/targetproc.png used on input line 455.
 (pdftex.def)             Requested size: 317.07614pt x 410.53708pt.
  [17 <./figs/targetproc.png>]
 <figs/toolsettings.png, id=228, 444.91219pt x 414.79968pt>
 File: figs/toolsettings.png Graphic file (type png)
 
 <use figs/toolsettings.png>
-Package pdftex.def Info: figs/toolsettings.png used on input line 470.
+Package pdftex.def Info: figs/toolsettings.png used on input line 472.
 (pdftex.def)             Requested size: 362.37569pt x 337.85306pt.
  [18 <./figs/toolsettings.png>]
 
 LaTeX Warning: Citation `sec: Emgsysregview' on page 19 undefined on input line
- 485.
+ 487.
 
 <figs/embsysregview.png, id=234, 354.57469pt x 152.06813pt>
 File: figs/embsysregview.png Graphic file (type png)
 
 <use figs/embsysregview.png>
-Package pdftex.def Info: figs/embsysregview.png used on input line 488.
+Package pdftex.def Info: figs/embsysregview.png used on input line 490.
 (pdftex.def)             Requested size: 271.7835pt x 116.56377pt.
 
 <figs/regviewinst.png, id=238, 469.755pt x 182.93344pt>
 File: figs/regviewinst.png Graphic file (type png)
 
 <use figs/regviewinst.png>
-Package pdftex.def Info: figs/regviewinst.png used on input line 504.
+Package pdftex.def Info: figs/regviewinst.png used on input line 506.
 (pdftex.def)             Requested size: 285.36658pt x 111.12865pt.
  [19 <./figs/embsysregview.png> <./figs/regviewinst.png>] <figs/regviewtab.png,
  id=248, 116.68594pt x 28.60687pt>
 File: figs/regviewtab.png Graphic file (type png)
 
 <use figs/regviewtab.png>
-Package pdftex.def Info: figs/regviewtab.png used on input line 527.
+Package pdftex.def Info: figs/regviewtab.png used on input line 529.
 (pdftex.def)             Requested size: 81.53241pt x 19.9893pt.
 
 <figs/regviewset.png, id=249, 20.32594pt x 18.82031pt>
 File: figs/regviewset.png Graphic file (type png)
 
 <use figs/regviewset.png>
-Package pdftex.def Info: figs/regviewset.png used on input line 527.
+Package pdftex.def Info: figs/regviewset.png used on input line 529.
 (pdftex.def)             Requested size: 16.75421pt x 15.51251pt.
 
 <figs/regviewmicro.png, id=250, 469.755pt x 33.87656pt>
 File: figs/regviewmicro.png Graphic file (type png)
 
 <use figs/regviewmicro.png>
-Package pdftex.def Info: figs/regviewmicro.png used on input line 527.
+Package pdftex.def Info: figs/regviewmicro.png used on input line 529.
 (pdftex.def)             Requested size: 366.899pt x 26.45874pt.
-LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 535
+LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 537
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\cmbright\omscmbr.fd"
 File: omscmbr.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 535.
+(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 537.
 
  [20 <./figs/regviewtab.png> <./figs/regviewset.png> <./figs/regviewmicro.png>]
 
@@ -1894,28 +1900,28 @@ LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <10.95> not available
 File: figs/projexplorer.png Graphic file (type png)
 
 <use figs/projexplorer.png>
-Package pdftex.def Info: figs/projexplorer.png used on input line 555.
+Package pdftex.def Info: figs/projexplorer.png used on input line 557.
 (pdftex.def)             Requested size: 135.89174pt x 83.53305pt.
 
 <figs/buildico.png, id=259, 38.39343pt x 22.58438pt>
 File: figs/buildico.png Graphic file (type png)
  <use figs/buildico.png>
-Package pdftex.def Info: figs/buildico.png used on input line 559.
+Package pdftex.def Info: figs/buildico.png used on input line 561.
 (pdftex.def)             Requested size: 26.37138pt x 15.51251pt.
 
 <figs/buildconsole.png, id=260, 400.49625pt x 121.20282pt>
 File: figs/buildconsole.png Graphic file (type png)
 
 <use figs/buildconsole.png>
-Package pdftex.def Info: figs/buildconsole.png used on input line 572.
+Package pdftex.def Info: figs/buildconsole.png used on input line 574.
 (pdftex.def)             Requested size: 244.60349pt x 74.02608pt.
  [21 <./figs/projexplorer.png> <./figs/buildico.png> <./figs/buildconsole.png>]
 
 
-LaTeX Warning: Citation `sec:' on page 22 undefined on input line 577.
+LaTeX Warning: Citation `sec:' on page 22 undefined on input line 579.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--579
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
 
  []
 
@@ -1923,81 +1929,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 577--579
 File: figs/debugconfig.png Graphic file (type png)
 
 <use figs/debugconfig.png>
-Package pdftex.def Info: figs/debugconfig.png used on input line 585.
+Package pdftex.def Info: figs/debugconfig.png used on input line 587.
 (pdftex.def)             Requested size: 362.37569pt x 44.54445pt.
 
 <figs/debugconfigmain.png, id=267, 405.01312pt x 323.70938pt>
 File: figs/debugconfigmain.png Graphic file (type png)
 
 <use figs/debugconfigmain.png>
-Package pdftex.def Info: figs/debugconfigmain.png used on input line 592.
+Package pdftex.def Info: figs/debugconfigmain.png used on input line 594.
 (pdftex.def)             Requested size: 317.07614pt x 253.43079pt.
  [22 <./figs/debugconfig.png> <./figs/debugconfigmain.png>] <figs/debugvar.png,
  id=274, 414.04688pt x 97.11281pt>
 File: figs/debugvar.png Graphic file (type png)
 
 <use figs/debugvar.png>
-Package pdftex.def Info: figs/debugvar.png used on input line 615.
+Package pdftex.def Info: figs/debugvar.png used on input line 617.
 (pdftex.def)             Requested size: 362.37569pt x 84.99571pt.
 
 
-LaTeX Warning: Citation `Inst:OpenOCD' on page 23 undefined on input line 620.
+LaTeX Warning: Citation `Inst:OpenOCD' on page 23 undefined on input line 622.
 
 [23 <./figs/debugvar.png>]
 <figs/debugdebugger.png, id=283, 442.65375pt x 354.57469pt>
 File: figs/debugdebugger.png Graphic file (type png)
 
 <use figs/debugdebugger.png>
-Package pdftex.def Info: figs/debugdebugger.png used on input line 638.
+Package pdftex.def Info: figs/debugdebugger.png used on input line 640.
 (pdftex.def)             Requested size: 317.07614pt x 253.99509pt.
 
 <figs/debugfavorites.png, id=284, 208.52907pt x 89.58469pt>
 File: figs/debugfavorites.png Graphic file (type png)
 
 <use figs/debugfavorites.png>
-Package pdftex.def Info: figs/debugfavorites.png used on input line 644.
+Package pdftex.def Info: figs/debugfavorites.png used on input line 646.
 (pdftex.def)             Requested size: 181.18439pt x 77.84097pt.
 
 <figs/resume.png, id=285, 30.1125pt x 26.34843pt>
 File: figs/resume.png Graphic file (type png)
  <use figs/resume.png>
-Package pdftex.def Info: figs/resume.png used on input line 651.
+Package pdftex.def Info: figs/resume.png used on input line 653.
 (pdftex.def)             Requested size: 17.72899pt x 15.51251pt.
 
 
-LaTeX Warning: Citation `perspectives' on page 24 undefined on input line 651.
+LaTeX Warning: Citation `perspectives' on page 24 undefined on input line 653.
 
 <figs/perspectiveico.png, id=286, 126.4725pt x 23.33719pt>
 File: figs/perspectiveico.png Graphic file (type png)
 
 <use figs/perspectiveico.png>
-Package pdftex.def Info: figs/perspectiveico.png used on input line 653.
+Package pdftex.def Info: figs/perspectiveico.png used on input line 655.
 (pdftex.def)             Requested size: 84.0684pt x 15.51251pt.
  [24 <./figs/debugdebugger.png> <./figs/debugfavorites.png> <./figs/resume.png>
  <./figs/perspectiveico.png>]
 <figs/CPPIco.png, id=295, 82.80937pt x 22.58438pt>
 File: figs/CPPIco.png Graphic file (type png)
  <use figs/CPPIco.png>
-Package pdftex.def Info: figs/CPPIco.png used on input line 659.
+Package pdftex.def Info: figs/CPPIco.png used on input line 661.
 (pdftex.def)             Requested size: 56.87949pt x 15.51251pt.
 
 <figs/projectexplorerview.png, id=296, 302.63063pt x 228.855pt>
 File: figs/projectexplorerview.png Graphic file (type png)
 
 <use figs/projectexplorerview.png>
-Package pdftex.def Info: figs/projectexplorerview.png used on input line 666.
+Package pdftex.def Info: figs/projectexplorerview.png used on input line 668.
 (pdftex.def)             Requested size: 181.18439pt x 137.01723pt.
 
 <figs/files.png, id=297, 199.49532pt x 37.64063pt>
 File: figs/files.png Graphic file (type png)
  <use figs/files.png>
-Package pdftex.def Info: figs/files.png used on input line 683.
+Package pdftex.def Info: figs/files.png used on input line 685.
 (pdftex.def)             Requested size: 181.18439pt x 34.18695pt.
 
 <figs/console.png, id=298, 313.17pt x 93.34875pt>
 File: figs/console.png Graphic file (type png)
  <use figs/console.png>
-Package pdftex.def Info: figs/console.png used on input line 689.
+Package pdftex.def Info: figs/console.png used on input line 691.
 (pdftex.def)             Requested size: 271.7835pt x 81.01476pt.
 
 [25 <./figs/CPPIco.png> <./figs/projectexplorerview.png> <./figs/files.png> <./
@@ -2005,14 +2011,14 @@ figs/console.png>] <figs/displayconsole.png, id=309, 37.64063pt x 23.33719pt>
 File: figs/displayconsole.png Graphic file (type png)
 
 <use figs/displayconsole.png>
-Package pdftex.def Info: figs/displayconsole.png used on input line 694.
+Package pdftex.def Info: figs/displayconsole.png used on input line 696.
 (pdftex.def)             Requested size: 25.02034pt x 15.51251pt.
 
 <figs/displayselectedconsole.png, id=310, 395.22656pt x 75.28125pt>
 File: figs/displayselectedconsole.png Graphic file (type png)
 
 <use figs/displayselectedconsole.png>
-Package pdftex.def Info: figs/displayselectedconsole.png used on input line 697
+Package pdftex.def Info: figs/displayselectedconsole.png used on input line 699
 .
 (pdftex.def)             Requested size: 317.07614pt x 60.39622pt.
 
@@ -2020,33 +2026,33 @@ Package pdftex.def Info: figs/displayselectedconsole.png used on input line 697
 File: figs/newperspectiveico.png Graphic file (type png)
 
 <use figs/newperspectiveico.png>
-Package pdftex.def Info: figs/newperspectiveico.png used on input line 701.
+Package pdftex.def Info: figs/newperspectiveico.png used on input line 703.
 (pdftex.def)             Requested size: 16.80551pt x 15.51251pt.
 
 <figs/debugperspective.png, id=312, 131.74219pt x 24.84282pt>
 File: figs/debugperspective.png Graphic file (type png)
 
 <use figs/debugperspective.png>
-Package pdftex.def Info: figs/debugperspective.png used on input line 703.
+Package pdftex.def Info: figs/debugperspective.png used on input line 705.
 (pdftex.def)             Requested size: 82.26628pt x 15.51251pt.
 
 <figs/debugico.png, id=313, 34.62938pt x 21.07875pt>
 File: figs/debugico.png Graphic file (type png)
  <use figs/debugico.png>
-Package pdftex.def Info: figs/debugico.png used on input line 706.
+Package pdftex.def Info: figs/debugico.png used on input line 708.
 (pdftex.def)             Requested size: 25.48529pt x 15.51251pt.
 
 <figs/debugdropdown.png, id=314, 182.93344pt x 109.1578pt>
 File: figs/debugdropdown.png Graphic file (type png)
 
 <use figs/debugdropdown.png>
-Package pdftex.def Info: figs/debugdropdown.png used on input line 709.
+Package pdftex.def Info: figs/debugdropdown.png used on input line 711.
 (pdftex.def)             Requested size: 181.18439pt x 108.11984pt.
 
 <figs/debugtab.png, id=315, 542.025pt x 101.62968pt>
 File: figs/debugtab.png Graphic file (type png)
  <use figs/debugtab.png>
-Package pdftex.def Info: figs/debugtab.png used on input line 715.
+Package pdftex.def Info: figs/debugtab.png used on input line 717.
 (pdftex.def)             Requested size: 362.37569pt x 67.9473pt.
 
 [26 <./figs/displayconsole.png> <./figs/displayselectedconsole.png> <./figs/new
@@ -2056,26 +2062,26 @@ perspectiveico.png> <./figs/debugperspective.png> <./figs/debugico.png> <./figs
 File: figs/breakpointico.png Graphic file (type png)
 
 <use figs/breakpointico.png>
-Package pdftex.def Info: figs/breakpointico.png used on input line 718.
+Package pdftex.def Info: figs/breakpointico.png used on input line 720.
 (pdftex.def)             Requested size: 15.51257pt x 15.51251pt.
 
 <figs/resumeico.png, id=325, 32.37094pt x 30.86531pt>
 File: figs/resumeico.png Graphic file (type png)
  <use figs/resumeico.png>
-Package pdftex.def Info: figs/resumeico.png used on input line 720.
+Package pdftex.def Info: figs/resumeico.png used on input line 722.
 (pdftex.def)             Requested size: 16.2694pt x 15.51251pt.
 
 <figs/pauseico.png, id=326, 24.09pt x 21.83156pt>
 File: figs/pauseico.png Graphic file (type png)
  <use figs/pauseico.png>
-Package pdftex.def Info: figs/pauseico.png used on input line 720.
+Package pdftex.def Info: figs/pauseico.png used on input line 722.
 (pdftex.def)             Requested size: 17.11723pt x 15.51251pt.
 
 <figs/terminateico.png, id=327, 32.37094pt x 29.35968pt>
 File: figs/terminateico.png Graphic file (type png)
 
 <use figs/terminateico.png>
-Package pdftex.def Info: figs/terminateico.png used on input line 720.
+Package pdftex.def Info: figs/terminateico.png used on input line 722.
 (pdftex.def)             Requested size: 17.10365pt x 15.51251pt.
 ) [27 <./figs/breakpointico.png> <./figs/resumeico.png> <./figs/pauseico.png> <
 ./figs/terminateico.png>]
@@ -2099,7 +2105,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 289 ({)
+### simple group (level 1) entered at line 291 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  39770 strings out of 493634
@@ -2167,7 +2173,7 @@ r10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright
 ic\cmbright\dpi864\ebbx10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2.9\fonts\pk\
 ljfour\public\cmbright\dpi1493\ebbx10.pk> <C:\Users\Nick\AppData\Local\MiKTeX\2
 .9\fonts\pk\ljfour\public\cmbright\dpi1244\ebbx10.pk>
-Output written on Main.pdf (27 pages, 2009024 bytes).
+Output written on Main.pdf (27 pages, 2009363 bytes).
 PDF statistics:
  874 PDF objects out of 1000 (max. 8388607)
  88 named destinations out of 1000 (max. 500000)
